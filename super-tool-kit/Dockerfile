@@ -25,6 +25,7 @@ COPY resources/tcping /usr/bin/
 COPY resources/gron /usr/bin/
 COPY --from=hengyunabc/arthas:3.4.4-no-jdk /opt/arthas /opt/arthas
 COPY resources/as.sh /usr/bin/
+COPY resources/starship.toml /root/.config/
 
 RUN pacman-mirrors -c China \
   && pacman -Sy \

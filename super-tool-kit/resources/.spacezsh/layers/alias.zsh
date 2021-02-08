@@ -117,6 +117,7 @@ typeset -A SPACEZSH_ALIAS_MAPPINGS=(
     'rh' 'rehash\n'
     'tc' 'tar -zcf _@_.tgz _@_'
     'tx' 'tar -zxf _@_'
+    'ne' 'netstat -ntlp\n'
 
     # Trash
     'Tl' 'trash -l\n'
