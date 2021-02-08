@@ -1,0 +1,229 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BINARY32	src/Makefile	/^BINARY32  := fzf-$(GOOS)_386$/;"	m
+BINARY64	src/Makefile	/^BINARY64  := fzf-$(GOOS)_amd64$/;"	m
+BINDIR	src/Makefile	/^BINDIR    := ..\/bin$/;"	m
+CompletionTest	test/test_go.rb	/^module CompletionTest$/;"	m
+DISTRO	src/Makefile	/^DISTRO := arch$/;"	m
+ExtendedFuzzyMatcher	fzf	/^  class ExtendedFuzzyMatcher < FuzzyMatcher$/;"	c	class:start_search
+FZF	fzf	/^class FZF$/;"	c
+FZF	plugin/fzf.vim	/^command! -nargs=* -complete=dir -bang FZF call s:cmd(<bang>0, <f-args>)$/;"	c
+FuzzyMatcher	fzf	/^  class FuzzyMatcher < Matcher$/;"	c	class:start_search
+GOOS	src/Makefile	/^	GOOS := darwin$/;"	m
+GOOS	src/Makefile	/^	GOOS := linux$/;"	m
+MatchData	fzf	/^    class MatchData$/;"	c	class:start_search.Matcher
+Matcher	fzf	/^  class Matcher$/;"	c	class:start_search
+MouseEvent	fzf	/^  class MouseEvent$/;"	c	class:start_search
+NilClass	test/test_go.rb	/^class NilClass$/;"	c
+RELEASE32	src/Makefile	/^RELEASE32  = fzf-$(VERSION)-$(GOOS)_386$/;"	m
+RELEASE64	src/Makefile	/^RELEASE64  = fzf-$(VERSION)-$(GOOS)_amd64$/;"	m
+SOURCES	src/Makefile	/^SOURCES   := $(wildcard *.go *\/*.go)$/;"	m
+Shell	test/test_go.rb	/^class Shell$/;"	c
+String	fzf	/^  class String$/;"	c
+String	fzf	/^class String$/;"	c
+TestBase	test/test_go.rb	/^class TestBase < Minitest::Test$/;"	c
+TestBash	test/test_go.rb	/^class TestBash < TestBase$/;"	c
+TestFish	test/test_go.rb	/^class TestFish < TestBase$/;"	c
+TestGoFZF	test/test_go.rb	/^class TestGoFZF < TestBase$/;"	c
+TestShell	test/test_go.rb	/^module TestShell$/;"	m
+TestZsh	test/test_go.rb	/^class TestZsh < TestBase$/;"	c
+Tmux	test/test_go.rb	/^class Tmux$/;"	c
+UNAME_S	src/Makefile	/^UNAME_S := $(shell uname -s)$/;"	m
+VERSION	src/Makefile	/^VERSION    = $(shell fzf\/$(BINARY64) --version)$/;"	m
+__fsel	shell/key-bindings.zsh	/^__fsel() {$/;"	f
+__fzf_cd__	shell/key-bindings.bash	/^__fzf_cd__() {$/;"	f
+__fzf_history__	shell/key-bindings.bash	/^__fzf_history__() {$/;"	f
+__fzf_select__	shell/key-bindings.bash	/^__fzf_select__() {$/;"	f
+__fzf_select_tmux__	shell/key-bindings.bash	/^__fzf_select_tmux__() {$/;"	f
+__fzfcmd	shell/key-bindings.bash	/^__fzfcmd() {$/;"	f
+__fzfcmd	shell/key-bindings.zsh	/^__fzfcmd() {$/;"	f
+_fzf_alias_completion	shell/completion.bash	/^_fzf_alias_completion() {$/;"	f
+_fzf_alias_completion	shell/completion.zsh	/^_fzf_alias_completion() {$/;"	f
+_fzf_all_completion	shell/completion.bash	/^_fzf_all_completion() {$/;"	f
+_fzf_all_completion	shell/completion.zsh	/^_fzf_all_completion() {$/;"	f
+_fzf_dir_completion	shell/completion.bash	/^_fzf_dir_completion() {$/;"	f
+_fzf_dir_completion	shell/completion.zsh	/^_fzf_dir_completion() {$/;"	f
+_fzf_env_var_completion	shell/completion.bash	/^_fzf_env_var_completion() {$/;"	f
+_fzf_env_var_completion	shell/completion.zsh	/^_fzf_env_var_completion() {$/;"	f
+_fzf_file_completion	shell/completion.bash	/^_fzf_file_completion() {$/;"	f
+_fzf_handle_dynamic_completion	shell/completion.bash	/^_fzf_handle_dynamic_completion() {$/;"	f
+_fzf_kill_completion	shell/completion.bash	/^_fzf_kill_completion() {$/;"	f
+_fzf_list_completion	shell/completion.bash	/^_fzf_list_completion() {$/;"	f
+_fzf_list_completion	shell/completion.zsh	/^_fzf_list_completion() {$/;"	f
+_fzf_opts_completion	shell/completion.bash	/^_fzf_opts_completion() {$/;"	f
+_fzf_orig_completion_filter	shell/completion.bash	/^_fzf_orig_completion_filter() {$/;"	f
+_fzf_path_completion	shell/completion.bash	/^_fzf_path_completion() {$/;"	f
+_fzf_path_completion	shell/completion.zsh	/^_fzf_path_completion() {$/;"	f
+_fzf_ssh_completion	shell/completion.bash	/^_fzf_ssh_completion() {$/;"	f
+_fzf_ssh_completion	shell/completion.zsh	/^_fzf_ssh_completion() {$/;"	f
+_fzf_telnet_completion	shell/completion.bash	/^_fzf_telnet_completion() {$/;"	f
+_fzf_telnet_completion	shell/completion.zsh	/^_fzf_telnet_completion() {$/;"	f
+addstr_safe	fzf	/^  def addstr_safe str$/;"	f	class:usage
+append_line	install	/^append_line() {$/;"	f
+ask	install	/^ask() {$/;"	f
+bash	test/test_go.rb	/^    def bash$/;"	f	class:Shell
+build_delim_regex	fzf	/^  def FZF.build_delim_regex delim$/;"	F
+burp	fzf	/^  def burp string, orig = nil$/;"	f
+calc_size	plugin/fzf.vim	/^function! s:calc_size(max, val)$/;"	f
+call	fzf	/^  def call(name, method, *args)$/;"	f	class:FZF
+callback	plugin/fzf.vim	/^function! s:callback(dict, temps)$/;"	f
+capture	test/test_go.rb	/^  def capture pane = 0$/;"	f	class:Tmux
+check_binary	install	/^check_binary() {$/;"	f
+cleanup	bin/fzf-tmux	/^cleanup() {$/;"	f
+close	test/test_go.rb	/^  def close$/;"	f	class:Tmux
+closed?	test/test_go.rb	/^  def closed?$/;"	f	class:Tmux
+cmd	plugin/fzf.vim	/^function! s:cmd(bang, ...) abort$/;"	f
+cmd_callback	plugin/fzf.vim	/^function! s:cmd_callback(lines) abort$/;"	f
+color	fzf	/^      def self.color sym, bold = false$/;"	F	class:init_screen
+confirm	uninstall	/^confirm() {$/;"	f
+constrain	fzf	/^  def constrain offset, cursor, count, height$/;"	f	class:start_search
+cprint	fzf	/^  def cprint str, col$/;"	f	class:usage
+ctrl	fzf	/^  def ctrl char$/;"	f	class:usage
+cursor_y	fzf	/^  def cursor_y offset = 0$/;"	f	class:usage
+do_match	fzf	/^    def do_match str, pat$/;"	f	class:start_search.Matcher
+double?	fzf	/^    def double? v$/;"	f	class:start_search.MouseEvent
+download	install	/^download() {$/;"	f
+emit	fzf	/^  def emit event$/;"	f	class:usage
+empty?	fzf	/^    def empty? q$/;"	f	class:start_search.ExtendedFuzzyMatcher
+empty?	fzf	/^    def empty? q$/;"	f	class:start_search.FuzzyMatcher
+end_with?	test/test_go.rb	/^  def end_with? str$/;"	f	class:NilClass
+escape	plugin/fzf.vim	/^function! s:escape(path)$/;"	f
+exact_regex	fzf	/^    def exact_regex w$/;"	f	class:start_search.ExtendedFuzzyMatcher.parse
+execute	plugin/fzf.vim	/^function! s:execute(dict, command, temps)$/;"	f
+execute_term	plugin/fzf.vim	/^function! s:execute_term(dict, command, temps)$/;"	f
+execute_tmux	plugin/fzf.vim	/^function! s:execute_tmux(dict, command, temps)$/;"	f
+fail	bin/fzf-tmux	/^fail() {$/;"	f
+filter_list	fzf	/^  def filter_list list$/;"	f
+force_encoding	fzf	/^    def force_encoding *arg$/;"	f	class:String
+format	fzf	/^  def format line, limit, offsets$/;"	f	class:usage
+fuzzy_regex	fzf	/^    def fuzzy_regex q$/;"	f	class:start_search.FuzzyMatcher
+fzf	test/test_go.rb	/^  def fzf(*opts)$/;"	f	class:TestBase
+fzf!	test/test_go.rb	/^  def fzf!(*opts)$/;"	f	class:TestBase
+fzf#run	plugin/fzf.vim	/^function! fzf#run(...) abort$/;"	f
+fzf_exec	plugin/fzf.vim	/^function! s:fzf_exec()$/;"	f
+fzf_tmux	plugin/fzf.vim	/^function! s:fzf_tmux(dict)$/;"	f
+get	fzf	/^  def get name$/;"	f	class:FZF
+get_input	fzf	/^  def get_input actions$/;"	f	class:start_search
+get_mouse	fzf	/^  def get_mouse$/;"	f	class:start_search
+geta	fzf	/^  def geta(*names)$/;"	f	class:FZF
+go	test/test_go.rb	/^  def go *args$/;"	f
+include?	test/test_go.rb	/^  def include? str$/;"	f	class:NilClass
+init_screen	fzf	/^  def init_screen$/;"	f
+initialize	fzf	/^      def initialize n$/;"	f	class:start_search.Matcher.MatchData
+initialize	fzf	/^    def initialize nth, delim$/;"	f	class:start_search.Matcher
+initialize	fzf	/^    def initialize rxflag, mode = :fuzzy, nth = nil, delim = nil$/;"	f	class:start_search.ExtendedFuzzyMatcher
+initialize	fzf	/^    def initialize rxflag, nth = nil, delim = nil$/;"	f	class:start_search.FuzzyMatcher
+initialize	fzf	/^    def initialize v = nil$/;"	f	class:start_search.MouseEvent
+initialize	fzf	/^  def initialize argv, source = $stdin$/;"	f	class:FZF
+initialize	test/test_go.rb	/^  def initialize shell = :bash$/;"	f	class:Tmux
+item_count	test/test_go.rb	/^          def item_count$/;"	f	class:Tmux.until
+kill	test/test_go.rb	/^  def kill$/;"	f	class:Tmux
+match	fzf	/^    def match list, q, prefix, suffix$/;"	f	class:start_search.ExtendedFuzzyMatcher.parse
+match	fzf	/^    def match list, q, prefix, suffix$/;"	f	class:start_search.FuzzyMatcher
+matcher	fzf	/^  def matcher$/;"	f
+max_items	fzf	/^  def max_items; C.lines - 2; end$/;"	f	class:usage
+new_shell	test/test_go.rb	/^  def new_shell$/;"	f	class:TestBash
+new_shell	test/test_go.rb	/^  def new_shell$/;"	f	class:TestFish
+new_shell	test/test_go.rb	/^  def new_shell$/;"	f	class:TestZsh
+num_unicode_bytes	fzf	/^  def num_unicode_bytes chr$/;"	f	class:start_search
+offset	fzf	/^      def offset _$/;"	f	class:start_search.Matcher.MatchData
+ord	fzf	/^      def ord$/;"	f	class:usage
+parse	fzf	/^    def parse q$/;"	f	class:start_search.ExtendedFuzzyMatcher
+parse_nth	fzf	/^  def parse_nth nth$/;"	f	class:FZF
+pick	fzf	/^  def pick$/;"	f	class:start_search
+popd	plugin/fzf.vim	/^function! s:popd(dict)$/;"	f
+prepare	test/test_go.rb	/^  def prepare$/;"	f
+present	plugin/fzf.vim	/^function! s:present(dict, ...)$/;"	f
+print_info	fzf	/^  def print_info msg = nil$/;"	f	class:usage
+print_input	fzf	/^  def print_input$/;"	f	class:usage
+print_item	fzf	/^  def print_item row, tokens, chosen, selected$/;"	f	class:usage
+pushd	plugin/fzf.vim	/^function! s:pushd(dict)$/;"	f
+rank	fzf	/^    def rank tuple$/;"	f
+read_nb	fzf	/^  def read_nb chars = 1, default = nil, tries = 10$/;"	f	class:start_search
+read_nbs	fzf	/^  def read_nbs$/;"	f	class:start_search
+readonce	test/test_go.rb	/^  def readonce$/;"	f	class:TestBase
+refresh	fzf	/^  def refresh$/;"	f	class:usage
+remove	uninstall	/^remove() {$/;"	f
+remove_line	uninstall	/^remove_line() {$/;"	f
+render	fzf	/^  def render &blk$/;"	f	class:start_search
+rxflag_for	fzf	/^    def rxflag_for q$/;"	f	class:start_search.FuzzyMatcher
+s:cpo_save	plugin/fzf.vim	/^let s:cpo_save = &cpo$/;"	v
+s:default_action	plugin/fzf.vim	/^let s:default_action = {$/;"	v
+s:default_height	plugin/fzf.vim	/^let s:default_height = '40%'$/;"	v
+s:fzf_go	plugin/fzf.vim	/^let s:fzf_go = expand('<sfile>:h:h').'\/bin\/fzf'$/;"	v
+s:fzf_tmux	plugin/fzf.vim	/^let s:fzf_tmux = expand('<sfile>:h:h').'\/bin\/fzf-tmux'$/;"	v
+s:install	plugin/fzf.vim	/^let s:install = expand('<sfile>:h:h').'\/install'$/;"	v
+s:installed	plugin/fzf.vim	/^let s:installed = 0$/;"	v
+s:launcher	plugin/fzf.vim	/^let s:launcher = function('s:xterm_launcher')$/;"	v
+send_keys	test/test_go.rb	/^  def send_keys *args$/;"	f	class:Tmux
+set	fzf	/^  def set name, value = nil$/;"	f	class:FZF
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestBase
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestBash
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestFish
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestGoFZF
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestShell
+setup	test/test_go.rb	/^  def setup$/;"	f	class:TestZsh
+shellesc	plugin/fzf.vim	/^function! s:shellesc(arg)$/;"	f
+sort	fzf	/^    def sort list$/;"	f
+split	plugin/fzf.vim	/^function! s:split(dict)$/;"	f
+splittable	plugin/fzf.vim	/^function! s:splittable(dict)$/;"	f
+start	fzf	/^  def start$/;"	f
+start_loop	fzf	/^  def start_loop$/;"	f	class:start_search
+start_reader	fzf	/^  def start_reader$/;"	f
+start_renderer	fzf	/^  def start_renderer$/;"	f	class:start_search
+start_search	fzf	/^  def start_search &callback$/;"	f
+start_with?	test/test_go.rb	/^  def start_with? str$/;"	f	class:NilClass
+symlink	install	/^symlink() {$/;"	f
+sync	fzf	/^  def sync$/;"	f	class:FZF
+teardown	test/test_go.rb	/^  def teardown$/;"	f	class:TestGoFZF
+teardown	test/test_go.rb	/^  def teardown$/;"	f	class:TestShell
+test_alt_c	test/test_go.rb	/^  def test_alt_c$/;"	f	class:TestShell
+test_ctrl_r	test/test_go.rb	/^  def test_ctrl_r$/;"	f	class:TestShell
+test_ctrl_t	test/test_go.rb	/^  def test_ctrl_t$/;"	f	class:TestShell
+test_dir_completion	test/test_go.rb	/^  def test_dir_completion$/;"	f	class:CompletionTest
+test_exit_0	test/test_go.rb	/^  def test_exit_0$/;"	f	class:TestGoFZF
+test_expect	test/test_go.rb	/^  def test_expect$/;"	f	class:TestGoFZF
+test_expect_print_query	test/test_go.rb	/^  def test_expect_print_query$/;"	f	class:TestGoFZF
+test_expect_print_query_select_1	test/test_go.rb	/^  def test_expect_print_query_select_1$/;"	f	class:TestGoFZF
+test_file_completion	test/test_go.rb	/^  def test_file_completion$/;"	f	class:CompletionTest
+test_fzf_default_command	test/test_go.rb	/^  def test_fzf_default_command$/;"	f	class:TestGoFZF
+test_invalid_cache	test/test_go.rb	/^  def test_invalid_cache$/;"	f	class:TestGoFZF
+test_key_bindings	test/test_go.rb	/^  def test_key_bindings$/;"	f	class:TestGoFZF
+test_multi_order	test/test_go.rb	/^  def test_multi_order$/;"	f	class:TestGoFZF
+test_process_completion	test/test_go.rb	/^  def test_process_completion$/;"	f	class:CompletionTest
+test_query_unicode	test/test_go.rb	/^  def test_query_unicode$/;"	f	class:TestGoFZF
+test_scroll	test/test_go.rb	/^  def test_scroll$/;"	f	class:TestGoFZF
+test_select_1	test/test_go.rb	/^  def test_select_1$/;"	f	class:TestGoFZF
+test_select_1_exit_0_fail	test/test_go.rb	/^  def test_select_1_exit_0_fail$/;"	f	class:TestGoFZF
+test_smart_case_for_each_term	test/test_go.rb	/^  def test_smart_case_for_each_term$/;"	f	class:TestGoFZF
+test_sync	test/test_go.rb	/^  def test_sync$/;"	f	class:TestGoFZF
+test_tac	test/test_go.rb	/^  def test_tac$/;"	f	class:TestGoFZF
+test_tac_nosort	test/test_go.rb	/^  def test_tac_nosort$/;"	f	class:TestGoFZF
+test_tac_sort	test/test_go.rb	/^  def test_tac_sort$/;"	f	class:TestGoFZF
+test_tiebreak	test/test_go.rb	/^  def test_tiebreak$/;"	f	class:TestGoFZF
+test_toggle_sort	test/test_go.rb	/^  def test_toggle_sort$/;"	f	class:TestGoFZF
+test_unicode_case	test/test_go.rb	/^  def test_unicode_case$/;"	f	class:TestGoFZF
+test_vanilla	test/test_go.rb	/^  def test_vanilla$/;"	f	class:TestGoFZF
+test_with_nth	test/test_go.rb	/^  def test_with_nth$/;"	f	class:TestGoFZF
+tmux_enabled	plugin/fzf.vim	/^function! s:tmux_enabled()$/;"	f
+tokenize	fzf	/^    def tokenize str$/;"	f	class:start_search.Matcher
+tokenize	fzf	/^  def tokenize delim, nth$/;"	f	class:String
+transform	fzf	/^  def transform line$/;"	f
+trim	fzf	/^    def trim str, len, left$/;"	f	class:usage
+until	test/test_go.rb	/^  def until pane = 0$/;"	f	class:Tmux
+update_list	fzf	/^  def update_list wipe$/;"	f	class:start_search
+upgrade	plugin/fzf.vim	/^function! s:upgrade(dict)$/;"	f
+usage	fzf	/^  def usage x, message = nil$/;"	f
+v=	fzf	/^    def v= v$/;"	f	class:start_search.MouseEvent
+version	fzf	/^    def version$/;"	f
+vselect	fzf	/^  def vselect &prc$/;"	f	class:start_search
+wait	test/test_go.rb	/^def wait$/;"	f
+width	fzf	/^    def width str$/;"	f	class:usage
+within?	fzf	/^    def within?$/;"	f	class:start_search.MouseEvent
+writelines	test/test_go.rb	/^  def writelines path, lines$/;"	f	class:TestGoFZF
+xterm_launcher	plugin/fzf.vim	/^function! s:xterm_launcher()$/;"	f
+zsh	test/test_go.rb	/^    def zsh$/;"	f	class:Shell

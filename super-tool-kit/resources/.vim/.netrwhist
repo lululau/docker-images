@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='scp://wendi@10.18.101.212:18021//home/wendi/'
+let g:netrw_dirhist_2='scp://wendi@10.18.101.212:18021//home/wendi/apps/'
+let g:netrw_dirhist_3='scp://wendi@10.18.101.212:18021//home/wendi/apps/umindex/'
+let g:netrw_dirhist_4='scp://wendi@10.18.101.212:18021//home/wendi/apps/umindex/current/'
+let g:netrw_dirhist_5='scp://wendi@10.18.101.212:18021//home/wendi/'
+let g:netrw_dirhist_6='/Users/liuxiang/.rvm/gems/ruby-2.2.0/gems/activesupport-4.2.0'
+let g:netrw_dirhist_7='/server/app'
+let g:netrw_dirhist_8='/etc/nginx/conf.d'
+let g:netrw_dirhist_9='/server/app/logs'

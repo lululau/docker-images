@@ -1,0 +1,824 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AirlineRefresh	plugin/airline.vim	/^command! AirlineRefresh call airline#load_theme()$/;"	c
+AirlineTheme	plugin/airline.vim	/^command! -nargs=? -complete=customlist,<sid>get_airline_themes AirlineTheme call <sid>airline_theme(<f-args>)$/;"	c
+AirlineToggle	plugin/airline.vim	/^command! AirlineToggle call <sid>airline_toggle()$/;"	c
+AirlineToggleWhitespace	plugin/airline.vim	/^command! AirlineToggleWhitespace call airline#extensions#whitespace#toggle()$/;"	c
+MyAppend1	t/airline.vim	/^function! MyAppend1(...)$/;"	f
+MyAppend2	t/airline.vim	/^function! MyAppend2(...)$/;"	f
+MyFuncref	t/airline.vim	/^function! MyFuncref(...)$/;"	f
+MyIgnoreFuncref	t/airline.vim	/^function! MyIgnoreFuncref(...)$/;"	f
+SectionSpec	t/section.vim	/^function! SectionSpec()$/;"	f
+Util1	t/util.vim	/^function! Util1()$/;"	f
+Util2	t/util.vim	/^function! Util2()$/;"	f
+Util3	t/util.vim	/^function! Util3(...)$/;"	f
+add_section	autoload/airline/extensions/default.vim	/^  function s:add_section(builder, context, key)$/;"	f
+airline#add_inactive_statusline_func	autoload/airline.vim	/^function! airline#add_inactive_statusline_func(name)$/;"	f
+airline#add_statusline_func	autoload/airline.vim	/^function! airline#add_statusline_func(name)$/;"	f
+airline#add_statusline_funcref	autoload/airline.vim	/^function! airline#add_statusline_funcref(function)$/;"	f
+airline#builder#new	autoload/airline/builder.vim	/^function! airline#builder#new(context)$/;"	f
+airline#check_mode	autoload/airline.vim	/^function! airline#check_mode(winnr)$/;"	f
+airline#cmdwinenter	plugin/airline.vim	/^function airline#cmdwinenter(...)$/;"	f
+airline#debug#profile1	autoload/airline/debug.vim	/^function! airline#debug#profile1()$/;"	f
+airline#debug#profile2	autoload/airline/debug.vim	/^function! airline#debug#profile2()$/;"	f
+airline#debug#profile3	autoload/airline/debug.vim	/^function! airline#debug#profile3()$/;"	f
+airline#deprecation#check	autoload/airline/deprecation.vim	/^function! airline#deprecation#check()$/;"	f
+airline#extensions#append_to_section	autoload/airline/extensions.vim	/^function! airline#extensions#append_to_section(name, value)$/;"	f
+airline#extensions#apply	autoload/airline/extensions.vim	/^function! airline#extensions#apply(...)$/;"	f
+airline#extensions#apply_left_override	autoload/airline/extensions.vim	/^function! airline#extensions#apply_left_override(section1, section2)$/;"	f
+airline#extensions#branch#get_head	autoload/airline/extensions/branch.vim	/^function! airline#extensions#branch#get_head()$/;"	f
+airline#extensions#branch#head	autoload/airline/extensions/branch.vim	/^function! airline#extensions#branch#head()$/;"	f
+airline#extensions#branch#init	autoload/airline/extensions/branch.vim	/^function! airline#extensions#branch#init(ext)$/;"	f
+airline#extensions#bufferline#init	autoload/airline/extensions/bufferline.vim	/^function! airline#extensions#bufferline#init(ext)$/;"	f
+airline#extensions#commandt#apply	autoload/airline/extensions/commandt.vim	/^function! airline#extensions#commandt#apply(...)$/;"	f
+airline#extensions#commandt#init	autoload/airline/extensions/commandt.vim	/^function! airline#extensions#commandt#init(ext)$/;"	f
+airline#extensions#csv#apply	autoload/airline/extensions/csv.vim	/^function! airline#extensions#csv#apply(...)$/;"	f
+airline#extensions#csv#get_column	autoload/airline/extensions/csv.vim	/^function! airline#extensions#csv#get_column()$/;"	f
+airline#extensions#csv#init	autoload/airline/extensions/csv.vim	/^function! airline#extensions#csv#init(ext)$/;"	f
+airline#extensions#ctrlp#apply	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#apply(...)$/;"	f
+airline#extensions#ctrlp#ctrlp_airline	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#ctrlp_airline(...)$/;"	f
+airline#extensions#ctrlp#ctrlp_airline_status	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#ctrlp_airline_status(...)$/;"	f
+airline#extensions#ctrlp#generate_color_map	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#generate_color_map(dark, light, white)$/;"	f
+airline#extensions#ctrlp#init	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#init(ext)$/;"	f
+airline#extensions#ctrlp#load_theme	autoload/airline/extensions/ctrlp.vim	/^function! airline#extensions#ctrlp#load_theme(palette)$/;"	f
+airline#extensions#default#apply	autoload/airline/extensions/default.vim	/^function! airline#extensions#default#apply(builder, context)$/;"	f
+airline#extensions#eclim#creat_line	autoload/airline/extensions/eclim.vim	/^function! airline#extensions#eclim#creat_line(...)$/;"	f
+airline#extensions#eclim#get_warnings	autoload/airline/extensions/eclim.vim	/^function! airline#extensions#eclim#get_warnings()$/;"	f
+airline#extensions#eclim#init	autoload/airline/extensions/eclim.vim	/^function! airline#extensions#eclim#init(ext)$/;"	f
+airline#extensions#example#apply	autoload/airline/extensions/example.vim	/^function! airline#extensions#example#apply(...)$/;"	f
+airline#extensions#example#get_cats	autoload/airline/extensions/example.vim	/^function! airline#extensions#example#get_cats()$/;"	f
+airline#extensions#example#init	autoload/airline/extensions/example.vim	/^function! airline#extensions#example#init(ext)$/;"	f
+airline#extensions#hunks#get_hunks	autoload/airline/extensions/hunks.vim	/^function! airline#extensions#hunks#get_hunks()$/;"	f
+airline#extensions#hunks#init	autoload/airline/extensions/hunks.vim	/^function! airline#extensions#hunks#init(ext)$/;"	f
+airline#extensions#load	autoload/airline/extensions.vim	/^function! airline#extensions#load()$/;"	f
+airline#extensions#load_theme	autoload/airline/extensions.vim	/^function! airline#extensions#load_theme()$/;"	f
+airline#extensions#netrw#apply	autoload/airline/extensions/netrw.vim	/^function! airline#extensions#netrw#apply(...)$/;"	f
+airline#extensions#netrw#init	autoload/airline/extensions/netrw.vim	/^function! airline#extensions#netrw#init(ext)$/;"	f
+airline#extensions#netrw#sortstring	autoload/airline/extensions/netrw.vim	/^function! airline#extensions#netrw#sortstring()$/;"	f
+airline#extensions#nrrwrgn#apply	autoload/airline/extensions/nrrwrgn.vim	/^function! airline#extensions#nrrwrgn#apply(...)$/;"	f
+airline#extensions#nrrwrgn#init	autoload/airline/extensions/nrrwrgn.vim	/^function! airline#extensions#nrrwrgn#init(ext)$/;"	f
+airline#extensions#prepend_to_section	autoload/airline/extensions.vim	/^function! airline#extensions#prepend_to_section(name, value)$/;"	f
+airline#extensions#promptline#init	autoload/airline/extensions/promptline.vim	/^function! airline#extensions#promptline#init(ext)$/;"	f
+airline#extensions#promptline#set_prompt_colors	autoload/airline/extensions/promptline.vim	/^function! airline#extensions#promptline#set_prompt_colors(palette)$/;"	f
+airline#extensions#quickfix#apply	autoload/airline/extensions/quickfix.vim	/^function! airline#extensions#quickfix#apply(...)$/;"	f
+airline#extensions#quickfix#init	autoload/airline/extensions/quickfix.vim	/^function! airline#extensions#quickfix#init(ext)$/;"	f
+airline#extensions#syntastic#get_warnings	autoload/airline/extensions/syntastic.vim	/^function! airline#extensions#syntastic#get_warnings()$/;"	f
+airline#extensions#syntastic#init	autoload/airline/extensions/syntastic.vim	/^function! airline#extensions#syntastic#init(ext)$/;"	f
+airline#extensions#tabline#default#format	autoload/airline/extensions/tabline/default.vim	/^function! airline#extensions#tabline#default#format(bufnr, buffers)$/;"	f
+airline#extensions#tabline#default#wrap_name	autoload/airline/extensions/tabline/default.vim	/^function! airline#extensions#tabline#default#wrap_name(bufnr, buffer_name)$/;"	f
+airline#extensions#tabline#get	autoload/airline/extensions/tabline.vim	/^function! airline#extensions#tabline#get()$/;"	f
+airline#extensions#tabline#get_buffer_name	autoload/airline/extensions/tabline.vim	/^function! airline#extensions#tabline#get_buffer_name(nr)$/;"	f
+airline#extensions#tabline#init	autoload/airline/extensions/tabline.vim	/^function! airline#extensions#tabline#init(ext)$/;"	f
+airline#extensions#tabline#load_theme	autoload/airline/extensions/tabline.vim	/^function! airline#extensions#tabline#load_theme(palette)$/;"	f
+airline#extensions#tabline#title	autoload/airline/extensions/tabline.vim	/^function! airline#extensions#tabline#title(n)$/;"	f
+airline#extensions#tabline#unique_tail#format	autoload/airline/extensions/tabline/unique_tail.vim	/^function! airline#extensions#tabline#unique_tail#format(bufnr, buffers)$/;"	f
+airline#extensions#tabline#unique_tail_improved#format	autoload/airline/extensions/tabline/unique_tail_improved.vim	/^function! airline#extensions#tabline#unique_tail_improved#format(bufnr, buffers)$/;"	f
+airline#extensions#tagbar#currenttag	autoload/airline/extensions/tagbar.vim	/^function! airline#extensions#tagbar#currenttag()$/;"	f
+airline#extensions#tagbar#get_status	autoload/airline/extensions/tagbar.vim	/^function! airline#extensions#tagbar#get_status(...)$/;"	f
+airline#extensions#tagbar#inactive_apply	autoload/airline/extensions/tagbar.vim	/^function! airline#extensions#tagbar#inactive_apply(...)$/;"	f
+airline#extensions#tagbar#init	autoload/airline/extensions/tagbar.vim	/^function! airline#extensions#tagbar#init(ext)$/;"	f
+airline#extensions#tmuxline#init	autoload/airline/extensions/tmuxline.vim	/^function! airline#extensions#tmuxline#init(ext)$/;"	f
+airline#extensions#tmuxline#set_tmux_colors	autoload/airline/extensions/tmuxline.vim	/^function! airline#extensions#tmuxline#set_tmux_colors(palette)$/;"	f
+airline#extensions#undotree#apply	autoload/airline/extensions/undotree.vim	/^function! airline#extensions#undotree#apply(...)$/;"	f
+airline#extensions#undotree#init	autoload/airline/extensions/undotree.vim	/^function! airline#extensions#undotree#init(ext)$/;"	f
+airline#extensions#unite#apply	autoload/airline/extensions/unite.vim	/^function! airline#extensions#unite#apply(...)$/;"	f
+airline#extensions#unite#init	autoload/airline/extensions/unite.vim	/^function! airline#extensions#unite#init(ext)$/;"	f
+airline#extensions#virtualenv#apply	autoload/airline/extensions/virtualenv.vim	/^function! airline#extensions#virtualenv#apply(...)$/;"	f
+airline#extensions#virtualenv#init	autoload/airline/extensions/virtualenv.vim	/^function! airline#extensions#virtualenv#init(ext)$/;"	f
+airline#extensions#whitespace#check	autoload/airline/extensions/whitespace.vim	/^function! airline#extensions#whitespace#check()$/;"	f
+airline#extensions#whitespace#init	autoload/airline/extensions/whitespace.vim	/^function! airline#extensions#whitespace#init(...)$/;"	f
+airline#extensions#whitespace#toggle	autoload/airline/extensions/whitespace.vim	/^function! airline#extensions#whitespace#toggle()$/;"	f
+airline#highlighter#add_accent	autoload/airline/highlighter.vim	/^function! airline#highlighter#add_accent(accent)$/;"	f
+airline#highlighter#add_separator	autoload/airline/highlighter.vim	/^function! airline#highlighter#add_separator(from, to, inverse)$/;"	f
+airline#highlighter#exec	autoload/airline/highlighter.vim	/^function! airline#highlighter#exec(group, colors)$/;"	f
+airline#highlighter#get_highlight	autoload/airline/highlighter.vim	/^function! airline#highlighter#get_highlight(group, ...)$/;"	f
+airline#highlighter#get_highlight2	autoload/airline/highlighter.vim	/^function! airline#highlighter#get_highlight2(fg, bg, ...)$/;"	f
+airline#highlighter#highlight	autoload/airline/highlighter.vim	/^function! airline#highlighter#highlight(modes)$/;"	f
+airline#highlighter#highlight_modified_inactive	autoload/airline/highlighter.vim	/^function! airline#highlighter#highlight_modified_inactive(bufnr)$/;"	f
+airline#highlighter#load_theme	autoload/airline/highlighter.vim	/^function! airline#highlighter#load_theme()$/;"	f
+airline#init#bootstrap	autoload/airline/init.vim	/^function! airline#init#bootstrap()$/;"	f
+airline#init#sections	autoload/airline/init.vim	/^function! airline#init#sections()$/;"	f
+airline#load_theme	autoload/airline.vim	/^function! airline#load_theme()$/;"	f
+airline#parts#define	autoload/airline/parts.vim	/^function! airline#parts#define(key, config)$/;"	f
+airline#parts#define_accent	autoload/airline/parts.vim	/^function! airline#parts#define_accent(key, accent)$/;"	f
+airline#parts#define_condition	autoload/airline/parts.vim	/^function! airline#parts#define_condition(key, predicate)$/;"	f
+airline#parts#define_empty	autoload/airline/parts.vim	/^function! airline#parts#define_empty(keys)$/;"	f
+airline#parts#define_function	autoload/airline/parts.vim	/^function! airline#parts#define_function(key, name)$/;"	f
+airline#parts#define_minwidth	autoload/airline/parts.vim	/^function! airline#parts#define_minwidth(key, width)$/;"	f
+airline#parts#define_raw	autoload/airline/parts.vim	/^function! airline#parts#define_raw(key, raw)$/;"	f
+airline#parts#define_text	autoload/airline/parts.vim	/^function! airline#parts#define_text(key, text)$/;"	f
+airline#parts#ffenc	autoload/airline/parts.vim	/^function! airline#parts#ffenc()$/;"	f
+airline#parts#filetype	autoload/airline/parts.vim	/^function! airline#parts#filetype()$/;"	f
+airline#parts#get	autoload/airline/parts.vim	/^function! airline#parts#get(key)$/;"	f
+airline#parts#iminsert	autoload/airline/parts.vim	/^function! airline#parts#iminsert()$/;"	f
+airline#parts#mode	autoload/airline/parts.vim	/^function! airline#parts#mode()$/;"	f
+airline#parts#paste	autoload/airline/parts.vim	/^function! airline#parts#paste()$/;"	f
+airline#parts#readonly	autoload/airline/parts.vim	/^function! airline#parts#readonly()$/;"	f
+airline#remove_statusline_func	autoload/airline.vim	/^function! airline#remove_statusline_func(name)$/;"	f
+airline#section#create	autoload/airline/section.vim	/^function! airline#section#create(parts)$/;"	f
+airline#section#create_left	autoload/airline/section.vim	/^function! airline#section#create_left(parts)$/;"	f
+airline#section#create_right	autoload/airline/section.vim	/^function! airline#section#create_right(parts)$/;"	f
+airline#statusline	autoload/airline.vim	/^function! airline#statusline(winnr)$/;"	f
+airline#switch_matching_theme	autoload/airline.vim	/^function! airline#switch_matching_theme()$/;"	f
+airline#switch_theme	autoload/airline.vim	/^function! airline#switch_theme(name)$/;"	f
+airline#themes#base16#refresh	autoload/airline/themes/base16.vim	/^  function! airline#themes#base16#refresh()$/;"	f
+airline#themes#generate_color_map	autoload/airline/themes.vim	/^function! airline#themes#generate_color_map(sect1, sect2, sect3, ...)$/;"	f
+airline#themes#get_highlight	autoload/airline/themes.vim	/^function! airline#themes#get_highlight(group, ...)$/;"	f
+airline#themes#get_highlight2	autoload/airline/themes.vim	/^function! airline#themes#get_highlight2(fg, bg, ...)$/;"	f
+airline#themes#hybrid#refresh	autoload/airline/themes/hybrid.vim	/^function! airline#themes#hybrid#refresh()$/;"	f
+airline#themes#jellybeans#refresh	autoload/airline/themes/jellybeans.vim	/^function! airline#themes#jellybeans#refresh()$/;"	f
+airline#themes#kalisi#refresh	autoload/airline/themes/kalisi.vim	/^function! airline#themes#kalisi#refresh()$/;"	f
+airline#themes#lucius#refresh	autoload/airline/themes/lucius.vim	/^function! airline#themes#lucius#refresh()$/;"	f
+airline#themes#monochrome#refresh	autoload/airline/themes/monochrome.vim	/^function! airline#themes#monochrome#refresh()$/;"	f
+airline#themes#patch	autoload/airline/themes.vim	/^function! airline#themes#patch(palette)$/;"	f
+airline#themes#solarized#refresh	autoload/airline/themes/solarized.vim	/^function! airline#themes#solarized#refresh()$/;"	f
+airline#themes#tomorrow#refresh	autoload/airline/themes/tomorrow.vim	/^function! airline#themes#tomorrow#refresh()$/;"	f
+airline#themes#zenburn#refresh	autoload/airline/themes/zenburn.vim	/^function! airline#themes#zenburn#refresh()$/;"	f
+airline#update_statusline	autoload/airline.vim	/^function! airline#update_statusline()$/;"	f
+airline#util#append	autoload/airline/util.vim	/^function! airline#util#append(text, minwidth)$/;"	f
+airline#util#exec_funcrefs	autoload/airline/util.vim	/^  function! airline#util#exec_funcrefs(list, ...)$/;"	f
+airline#util#getwinvar	autoload/airline/util.vim	/^  function! airline#util#getwinvar(winnr, key, def)$/;"	f
+airline#util#prepend	autoload/airline/util.vim	/^function! airline#util#prepend(text, minwidth)$/;"	f
+airline#util#wrap	autoload/airline/util.vim	/^function! airline#util#wrap(text, minwidth)$/;"	f
+airline_theme	plugin/airline.vim	/^function! s:airline_theme(...)$/;"	f
+airline_toggle	plugin/airline.vim	/^function! s:airline_toggle()$/;"	f
+build_sections	autoload/airline/extensions/default.vim	/^function! s:build_sections(builder, context, keys)$/;"	f
+c	t/airline.vim	/^    let c = len(g:airline_statusline_funcrefs)$/;"	v
+check_defined	autoload/airline/init.vim	/^function! s:check_defined(variable, default)$/;"	f
+check_defined_section	autoload/airline/extensions.vim	/^function! s:check_defined_section(name)$/;"	f
+check_in_path	autoload/airline/extensions/branch.vim	/^function! s:check_in_path()$/;"	f
+check_mixed_indent	autoload/airline/extensions/whitespace.vim	/^function! s:check_mixed_indent()$/;"	f
+clear	t/init.vim	/^function! s:clear()$/;"	f
+colors	t/themes.vim	/^    let colors = airline#themes#get_highlight('Foo')$/;"	v
+create	autoload/airline/section.vim	/^function! s:create(parts, append)$/;"	f
+exec_separator	autoload/airline/highlighter.vim	/^function! s:exec_separator(dict, from, to, inverse, suffix)$/;"	f
+ext.add_inactive_statusline_func	autoload/airline/extensions.vim	/^function! s:ext.add_inactive_statusline_func(name) dict$/;"	f
+ext.add_statusline_func	autoload/airline/extensions.vim	/^function! s:ext.add_statusline_func(name) dict$/;"	f
+ext.add_statusline_funcref	autoload/airline/extensions.vim	/^function! s:ext.add_statusline_funcref(function) dict$/;"	f
+ext.add_theme_func	autoload/airline/extensions.vim	/^function! s:ext.add_theme_func(name) dict$/;"	f
+g:airline#extensions#default#layout	t/extensions_default.vim	/^    let g:airline#extensions#default#layout = [$/;"	v
+g:airline#extensions#example#number_of_cats	autoload/airline/extensions/example.vim	/^  let g:airline#extensions#example#number_of_cats = 42$/;"	v
+g:airline#extensions#quickfix#location_text	autoload/airline/extensions/quickfix.vim	/^let g:airline#extensions#quickfix#location_text = 'Location'$/;"	v
+g:airline#extensions#quickfix#quickfix_text	autoload/airline/extensions/quickfix.vim	/^let g:airline#extensions#quickfix#quickfix_text = 'Quickfix'$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette = {}$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.accents = {$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.inactive_modified = {$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.insert_modified = {$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.insert_paste = {$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.normal_modified = {$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.replace = copy(airline#themes#badwolf#palette.insert)$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.replace.airline_a = [ s:I1[0] , s:RE[0] , s:I1[2] , s:RE[1] , '' ]$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.replace_modified = g:airline#themes#badwolf#palette.insert_modified$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#badwolf#palette	autoload/airline/themes/badwolf.vim	/^let g:airline#themes#badwolf#palette.visual_modified = {$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette = {}$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.inactive_modified = {$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:I3)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.insert_modified = copy(g:airline#themes#base16#palette.normal_modified)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.insert_paste = {$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.normal_modified = {$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.replace = {$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.replace_modified = copy(g:airline#themes#base16#palette.insert_modified)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:V3)$/;"	v
+g:airline#themes#base16#palette	autoload/airline/themes/base16.vim	/^  let g:airline#themes#base16#palette.visual_modified = copy(g:airline#themes#base16#palette.insert_modified)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette = {}$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.inactive_modified = {$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.insert = airline#themes#generate_color_map(s:I1, s:N2, s:I3)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.insert_modified = copy(g:airline#themes#bubblegum#palette.normal_modified)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.insert_paste = {$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.normal_modified = {$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.replace = {$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.replace_modified = copy(g:airline#themes#bubblegum#palette.insert_modified)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.visual = airline#themes#generate_color_map(s:V1, s:N2, s:V3)$/;"	v
+g:airline#themes#bubblegum#palette	autoload/airline/themes/bubblegum.vim	/^let g:airline#themes#bubblegum#palette.visual_modified = copy(g:airline#themes#bubblegum#palette.insert_modified)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette = {}$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.accents = {$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.inactive_modified = {$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.insert_modified = {$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.insert_paste = {$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.normal_modified = {$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.replace = copy(g:airline#themes#dark#palette.insert)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.replace.airline_a = [ s:I2[0]   , '#af0000' , s:I2[2] , 124     , ''     ]$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.replace_modified = g:airline#themes#dark#palette.insert_modified$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#dark#palette	autoload/airline/themes/dark.vim	/^let g:airline#themes#dark#palette.visual_modified = {$/;"	v
+g:airline#themes#hybrid#palette	autoload/airline/themes/hybrid.vim	/^let g:airline#themes#hybrid#palette = {}$/;"	v
+g:airline#themes#jellybeans#palette	autoload/airline/themes/jellybeans.vim	/^let g:airline#themes#jellybeans#palette = {}$/;"	v
+g:airline#themes#kalisi#palette	autoload/airline/themes/kalisi.vim	/^let g:airline#themes#kalisi#palette = {}$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette = {}$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.accents = {$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.inactive_modified = {$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.insert_modified = {$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.normal_modified = {$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.replace = copy(g:airline#themes#kolor#palette.insert)$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.replace.airline_a = [ s:I2[0]   , '#005154' , s:I2[2] , 23      , ''     ]$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.replace_modified = {$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#kolor#palette	autoload/airline/themes/kolor.vim	/^let g:airline#themes#kolor#palette.visual_modified = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette = {}$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.accents = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.inactive_modified = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.insert_modified = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.insert_paste = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.normal_modified = {$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.replace = copy(airline#themes#laederon#palette.insert)$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.replace.airline_a = [ s:I1[0] , s:RE[0] , s:I1[2] , s:RE[1] , '' ]$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.replace_modified = g:airline#themes#laederon#palette.insert_modified$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#laederon#palette	autoload/airline/themes/laederon.vim	/^let g:airline#themes#laederon#palette.visual_modified = {$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette = {}$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.inactive_modified = {$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.insert_modified = {$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.insert_paste = {$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.normal_modified = {$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.replace = copy(g:airline#themes#light#palette.insert)$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.replace.airline_a = [ s:I2[0]   , '#ff0000' , s:I1[2] , 196     , ''     ]$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.replace_modified = g:airline#themes#light#palette.insert_modified$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#light#palette	autoload/airline/themes/light.vim	/^let g:airline#themes#light#palette.visual_modified = {$/;"	v
+g:airline#themes#lucius#palette	autoload/airline/themes/lucius.vim	/^let g:airline#themes#lucius#palette = {}$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette = {}$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.accents = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.inactive_modified = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.insert.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.insert_modified = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.insert_modified.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.insert_paste = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.normal.airline_warning = [$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.normal_modified = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.normal_modified.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.replace = copy(g:airline#themes#luna#palette.insert)$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.replace.airline_a = [ s:I2[0]   , '#920000' , s:I2[2] , 88     , ''     ]$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.replace.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.replace_modified = g:airline#themes#luna#palette.insert_modified$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.replace_modified.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.tabline = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.visual.airline_warning =$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.visual_modified = {$/;"	v
+g:airline#themes#luna#palette	autoload/airline/themes/luna.vim	/^let g:airline#themes#luna#palette.visual_modified.airline_warning =$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette = {}$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.accents = {$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.inactive_modified = {$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.insert_modified = {$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.normal_modified = {$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.replace = copy(g:airline#themes#molokai#palette.insert)$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.replace.airline_a = [ s:I1[0]   , '#ef5939' , s:I1[2] , 166     , ''     ]$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.replace_modified = {$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#molokai#palette	autoload/airline/themes/molokai.vim	/^let g:airline#themes#molokai#palette.visual_modified = {$/;"	v
+g:airline#themes#monochrome#palette	autoload/airline/themes/monochrome.vim	/^let g:airline#themes#monochrome#palette = {}$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette = {}$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.insert = airline#themes#generate_color_map(s:I1, s:BB, s:I2)$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.insert_modified = {'airline_c': ['#AFAF87', '#5F5F5F', s:alert, s:termbg2, 'bold'] ,}$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.normal = airline#themes#generate_color_map(s:N1, s:BB, s:N2)$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.normal_modified = {'airline_c': ['#ffffff', '#5f005f', s:alert, s:termbg2, 'bold'] ,}$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.replace = airline#themes#generate_color_map(s:R1, s:BB, s:R2)$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.replace_modified = {'airline_c': ['#AFAF87', '#5f005f', s:alert, s:termbg2, 'bold'] ,}$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.visual = airline#themes#generate_color_map(s:V1, s:BB, s:V2)$/;"	v
+g:airline#themes#murmur#palette	autoload/airline/themes/murmur.vim	/^let g:airline#themes#murmur#palette.visual_modified = {'airline_c': [ '#AFAF87', '#5f005f', s:alert, s:termbg2, 'bold'] ,}$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette = {}$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.insert_replace = {$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.replace = copy(airline#themes#powerlineish#palette.normal)$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.replace.airline_a = [ s:RE[0] , s:RE[1] , s:RE[2] , s:RE[3] , '' ]$/;"	v
+g:airline#themes#powerlineish#palette	autoload/airline/themes/powerlineish.vim	/^let g:airline#themes#powerlineish#palette.visual = {$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette = {}$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA2, s:IA2)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.inactive_modified = copy(g:airline#themes#serene#palette.normal_modified)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.insert_modified = copy(g:airline#themes#serene#palette.normal_modified)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.insert_paste = {$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.normal_modified = {$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.replace = {$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.replace_modified = copy(g:airline#themes#serene#palette.normal_modified)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#serene#palette	autoload/airline/themes/serene.vim	/^let g:airline#themes#serene#palette.visual_modified = copy(g:airline#themes#serene#palette.normal_modified)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette = {}$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA2, s:IA2)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.inactive_modified = {$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.insert_modified = copy(g:airline#themes#simple#palette.normal_modified)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.insert_paste = {$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.normal_modified = {$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.replace = {$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.replace_modified = copy(g:airline#themes#simple#palette.normal_modified)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#simple#palette	autoload/airline/themes/simple.vim	/^let g:airline#themes#simple#palette.visual_modified = copy(g:airline#themes#simple#palette.normal_modified)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette = {}$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.accents = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.inactive_modified = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.insert.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.insert_modified = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.insert_modified.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.insert_paste = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.normal.airline_warning = [$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.normal_modified = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.normal_modified.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace = copy(g:airline#themes#sol#palette.insert)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace.airline_a = [ s:I1[0] , '#ff2121' , s:I1[2] , 196 , '' ]$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace.airline_z = [ s:I1[0] , '#ff2121' , s:I1[2] , 196 , '' ]$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace_modified = g:airline#themes#sol#palette.insert_modified$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.replace_modified.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.tabline = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.visual.airline_warning =$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.visual_modified = {$/;"	v
+g:airline#themes#sol#palette	autoload/airline/themes/sol.vim	/^let g:airline#themes#sol#palette.visual_modified.airline_warning =$/;"	v
+g:airline#themes#solarized#palette	autoload/airline/themes/solarized.vim	/^let g:airline#themes#solarized#palette = {}$/;"	v
+g:airline#themes#tomorrow#palette	autoload/airline/themes/tomorrow.vim	/^let g:airline#themes#tomorrow#palette = {}$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette = {}$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.accents = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.inactive = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.inactive_modified = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.insert_modified = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.insert_paste = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.normal_modified = {$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.replace = copy(airline#themes#ubaryd#palette.insert)$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.replace.airline_a = [ s:I1[0] , s:RE[0] , s:I1[2] , s:RE[1] , '' ]$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.replace_modified = g:airline#themes#ubaryd#palette.insert_modified$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#ubaryd#palette	autoload/airline/themes/ubaryd.vim	/^let g:airline#themes#ubaryd#palette.visual_modified = {$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette = {}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.accents = {'red': ['#FF0000', '', 88, '']}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.inactive_modified = {'airline_c': ['#4E4E4E', '', 239, '', 'bold'] ,}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.insert_modified = {'airline_c': ['#AFAF87', '#5F5F5F', 144, 59, 'bold'] ,}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.insert_paste = {'airline_c': ['#AFAF87', '#5F5F5F', 144, 59, ''] ,}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.normal_modified = {'airline_c': ['#ffffff', '#5f005f', 144, 59, 'bold'] ,}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.replace = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.replace.airline_a = ['#FFFFFF', '#870000', 15, 88, '']$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.replace_modified = {'airline_c': ['#AFAF87', '#5F5F5F', 144, 59, 'bold'] ,}$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#understated#palette	autoload/airline/themes/understated.vim	/^let g:airline#themes#understated#palette.visual_modified = {'airline_c': [ '#AFAF87', '#5f005f', 144, 59, 'bold'] ,}$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette = {}$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.accents = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.ctrlp = airline#extensions#ctrlp#generate_color_map($/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.inactive_modified = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.insert_modified = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.insert_paste = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.normal_modified = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.replace_modified = {$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)$/;"	v
+g:airline#themes#wombat#palette	autoload/airline/themes/wombat.vim	/^let g:airline#themes#wombat#palette.visual_modified = {$/;"	v
+g:airline#themes#zenburn#palette	autoload/airline/themes/zenburn.vim	/^let g:airline#themes#zenburn#palette = {}$/;"	v
+g:airline_inactive_collapse	t/airline.vim	/^    let g:airline_inactive_collapse = 0$/;"	v
+g:airline_inactive_collapse	t/airline.vim	/^    let g:airline_inactive_collapse = 1$/;"	v
+g:airline_section_	t/init.vim	/^      let g:airline_section_{s} = s$/;"	v
+g:airline_section_a	t/airline.vim	/^    let g:airline_section_a = airline#section#create(['mode', 'mode'])$/;"	v
+g:airline_statusline_funcrefs	autoload/airline.vim	/^let g:airline_statusline_funcrefs = get(g:, 'airline_statusline_funcrefs', [])$/;"	v
+g:airline_statusline_funcrefs	t/airline.vim	/^    let g:airline_statusline_funcrefs = []$/;"	v
+g:airline_theme	t/airline.vim	/^let g:airline_theme = 'dark'$/;"	v
+g:airline_theme	t/builder.vim	/^let g:airline_theme = 'dark'$/;"	v
+g:airline_theme	t/extensions_default.vim	/^let g:airline_theme = 'dark'$/;"	v
+g:airline_theme	t/highlighter.vim	/^let g:airline_theme = 'dark'$/;"	v
+g:count	t/util.vim	/^    let g:count = 0$/;"	v
+g:loaded_airline	plugin/airline.vim	/^let g:loaded_airline = 1$/;"	v
+get_airline_themes	plugin/airline.vim	/^function! s:get_airline_themes(a, l, p)$/;"	f
+get_array	autoload/airline/highlighter.vim	/^function! s:get_array(fg, bg, opts)$/;"	f
+get_buffer_list	autoload/airline/extensions/tabline.vim	/^function! s:get_buffer_list()$/;"	f
+get_buffers	autoload/airline/extensions/tabline.vim	/^function! s:get_buffers()$/;"	f
+get_git_branch	autoload/airline/extensions/branch.vim	/^function! s:get_git_branch(path)$/;"	f
+get_hunks	autoload/airline/extensions/hunks.vim	/^function! s:get_hunks()$/;"	f
+get_hunks_empty	autoload/airline/extensions/hunks.vim	/^function! s:get_hunks_empty()$/;"	f
+get_hunks_gitgutter	autoload/airline/extensions/hunks.vim	/^function! s:get_hunks_gitgutter()$/;"	f
+get_hunks_signify	autoload/airline/extensions/hunks.vim	/^function! s:get_hunks_signify()$/;"	f
+get_section	autoload/airline/extensions/default.vim	/^function! s:get_section(winnr, key, ...)$/;"	f
+get_syn	autoload/airline/highlighter.vim	/^function! s:get_syn(group, what)$/;"	f
+get_tabs	autoload/airline/extensions/tabline.vim	/^function! s:get_tabs()$/;"	f
+get_text	autoload/airline/extensions/quickfix.vim	/^function! s:get_text()$/;"	f
+get_visible_buffers	autoload/airline/extensions/tabline.vim	/^function! s:get_visible_buffers()$/;"	f
+gui2cui	autoload/airline/highlighter.vim	/^function! s:gui2cui(rgb, fallback)$/;"	f
+hl	t/highlighter.vim	/^    let hl = airline#highlighter#get_highlight('Foo1_to_Foo2')$/;"	v
+hl	t/themes.vim	/^    let hl = airline#themes#get_highlight('Foo', 'bold', 'italic')$/;"	v
+hl	t/themes.vim	/^    let hl = airline#themes#get_highlight2(['Foo','bg'], ['Foo','fg'], 'italic', 'bold')$/;"	v
+init	plugin/airline.vim	/^function! s:init()$/;"	f
+invoke_funcrefs	autoload/airline.vim	/^function! s:invoke_funcrefs(context, funcrefs)$/;"	f
+is_branch_empty	autoload/airline/extensions/hunks.vim	/^function! s:is_branch_empty()$/;"	f
+is_excluded_window	autoload/airline/extensions.vim	/^function! s:is_excluded_window()$/;"	f
+map	t/themes.vim	/^    let map = airline#themes#generate_color_map($/;"	v
+on_colorscheme_changed	plugin/airline.vim	/^function! s:on_colorscheme_changed()$/;"	f
+on_cursormove	autoload/airline/extensions/tabline.vim	/^function! s:on_cursormove(min_count, total_count)$/;"	f
+on_window_changed	plugin/airline.vim	/^function! s:on_window_changed()$/;"	f
+prototype.add_raw	autoload/airline/builder.vim	/^function! s:prototype.add_raw(text)$/;"	f
+prototype.add_section	autoload/airline/builder.vim	/^function! s:prototype.add_section(group, contents)$/;"	f
+prototype.add_section_spaced	autoload/airline/builder.vim	/^function! s:prototype.add_section_spaced(group, contents)$/;"	f
+prototype.build	autoload/airline/builder.vim	/^function! s:prototype.build()$/;"	f
+prototype.split	autoload/airline/builder.vim	/^function! s:prototype.split(...)$/;"	f
+s	t/section.vim	/^    let s = airline#section#create(['asdf', 'func'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create(['conditional'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create(['hi'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create(['paste'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create(['text', 'raw', 'func'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create(['whitespace'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_left(['asdf', 'aaaa', 'raw'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_left(['asdf', 'raw'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_left(['text', 'text'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_right(['%t', 'asdf', '%{getcwd()}'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_right(['raw', '%f'])$/;"	v
+s	t/section.vim	/^    let s = airline#section#create_right(['text', 'text'])$/;"	v
+s:BB	autoload/airline/themes/murmur.vim	/^let s:BB = ['#AFAF87', '#5F5F5F', 144, s:termbg] " Branch and file format blocks$/;"	v
+s:I1	autoload/airline/themes/badwolf.vim	/^let s:I1 = [ '#141413' , '#0a9dff' , 232 , 39  ] " blackestgravel & tardis$/;"	v
+s:I1	autoload/airline/themes/base16.vim	/^  let s:I1 = [s:gui_med_gray_hi, s:gui_blue, s:cterm_med_gray_hi, s:cterm_blue]$/;"	v
+s:I1	autoload/airline/themes/bubblegum.vim	/^let s:I1 = [s:gui_med_gray_hi, s:gui_blue, s:cterm_med_gray_hi, s:cterm_blue]$/;"	v
+s:I1	autoload/airline/themes/dark.vim	/^let s:I1 = [ '#00005f' , '#00dfff' , 17  , 45  ]$/;"	v
+s:I1	autoload/airline/themes/kalisi.vim	/^let s:I1 = [ '#ffffff' , '#e80000' , 23  , 231 ] $/;"	v
+s:I1	autoload/airline/themes/kolor.vim	/^let s:I1 = [ '#242322' , '#7eaefd' , 234 , 111 ]$/;"	v
+s:I1	autoload/airline/themes/laederon.vim	/^let s:I1 = [ '#1a1a18' , '#1693a5' , 232 , 62 ] " blackestgravel & crystallake$/;"	v
+s:I1	autoload/airline/themes/light.vim	/^let s:I1 = [ '#ffffff' , '#00875f' , 255 , 29  ]$/;"	v
+s:I1	autoload/airline/themes/luna.vim	/^let s:I1 = [ '#ffffff' , '#789f00' , 231 , 106 ]$/;"	v
+s:I1	autoload/airline/themes/molokai.vim	/^let s:I1 = [ '#080808' , '#66d9ef' , 232 , 81 ]$/;"	v
+s:I1	autoload/airline/themes/murmur.vim	/^let s:I1 = ['#FFFFFF', '#87AF5F', 15, s:insertbg]         " Outside blocks in insert mode$/;"	v
+s:I1	autoload/airline/themes/powerlineish.vim	/^let s:I1 = [ '#005f5f' , '#ffffff' , 23  , 231 ] " darkestcyan    & white$/;"	v
+s:I1	autoload/airline/themes/serene.vim	/^let s:I1 = [ '#5fff00' , s:guibg , 82  , s:termbg ]$/;"	v
+s:I1	autoload/airline/themes/simple.vim	/^let s:I1 = [ s:guibg, '#5fff00' , s:termbg , 82 ]$/;"	v
+s:I1	autoload/airline/themes/sol.vim	/^let s:I1 = [ '#eeeeee' , '#09643f' , 255 , 30  ]$/;"	v
+s:I1	autoload/airline/themes/ubaryd.vim	/^let s:I1 = [ '#1a1a18' , '#fade3e' , 232 , 221 ] " blackestgravel & warmcorn$/;"	v
+s:I1	autoload/airline/themes/understated.vim	/^let s:I1 = ['#FFFFFF', '#87AF5F', 15, 107] " Outside blocks in normal mode (mode and file position)$/;"	v
+s:I1	autoload/airline/themes/wombat.vim	/^let s:I1 = [ '#141413' , '#FDE76E' , 232 , 227 ]$/;"	v
+s:I2	autoload/airline/themes/badwolf.vim	/^let s:I2 = [ '#f4cf86' , '#005fff' , 222 , 27  ] " dirtyblonde    & facebook$/;"	v
+s:I2	autoload/airline/themes/dark.vim	/^let s:I2 = [ '#ffffff' , '#005fff' , 255 , 27  ]$/;"	v
+s:I2	autoload/airline/themes/kalisi.vim	/^let s:I2 = [ '#c5c5c5' , '#901010' , 74  , 31  ] $/;"	v
+s:I2	autoload/airline/themes/kolor.vim	/^let s:I2 = [ '#75d7d8' , '#242322' , 80  , 234 ]$/;"	v
+s:I2	autoload/airline/themes/laederon.vim	/^let s:I2 = [ '#515744' , '#44403a' , 101 , 238 ] " lichen & deepgravel$/;"	v
+s:I2	autoload/airline/themes/light.vim	/^let s:I2 = [ '#005f00' , '#00df87' , 22  , 42  ]$/;"	v
+s:I2	autoload/airline/themes/luna.vim	/^let s:I2 = [ '#ffffff' , '#003f3f' , 231 , 29  ]$/;"	v
+s:I2	autoload/airline/themes/molokai.vim	/^let s:I2 = [ '#f8f8f0' , '#232526' , 253 , 16 ]$/;"	v
+s:I2	autoload/airline/themes/murmur.vim	/^let s:I2 = ['#AFAF87', '#5F5F5F', s:insertbg, s:termbg2]  " Middle block$/;"	v
+s:I2	autoload/airline/themes/powerlineish.vim	/^let s:I2 = [ '#5fafd7' , '#0087af' , 74  , 31  ] " darkcyan       & darkblue$/;"	v
+s:I2	autoload/airline/themes/serene.vim	/^let s:I2 = [ '#ff5f00' , s:guibg , 202 , s:termbg ]$/;"	v
+s:I2	autoload/airline/themes/simple.vim	/^let s:I2 = [ '#ff5f00' , s:guibg2, 202 , s:termbg2 ]$/;"	v
+s:I2	autoload/airline/themes/sol.vim	/^let s:I2 = [ '#343434' , '#a3a3a3' , 237 , 249 ]$/;"	v
+s:I2	autoload/airline/themes/ubaryd.vim	/^let s:I2 = [ '#c7b386' , '#45413b' , 252 , 238 ] " bleaksand & deepgravel$/;"	v
+s:I2	autoload/airline/themes/understated.vim	/^let s:I2 = ['#AFAF87', '#5F5F5F', 144, 59] " Next blocks inside (branch and file format)$/;"	v
+s:I2	autoload/airline/themes/wombat.vim	/^let s:I2 = [ '#FDE76E' , '#32322F' , 227 , 236 ]$/;"	v
+s:I3	autoload/airline/themes/badwolf.vim	/^let s:I3 = [ '#0a9dff' , '#242321' , 39  , 235 ] " tardis         & darkgravel$/;"	v
+s:I3	autoload/airline/themes/base16.vim	/^  let s:I3 = [s:gui_blue, s:gui_med_gray_hi, s:cterm_blue, s:cterm_med_gray_hi]$/;"	v
+s:I3	autoload/airline/themes/bubblegum.vim	/^let s:I3 = [s:gui_blue, s:gui_med_gray_hi, s:cterm_blue, s:cterm_med_gray_hi]$/;"	v
+s:I3	autoload/airline/themes/dark.vim	/^let s:I3 = [ '#ffffff' , '#000080' , 15  , 17  ]$/;"	v
+s:I3	autoload/airline/themes/kalisi.vim	/^let s:I3 = [ '#c5c5c5' , '#500000' , 117 , 24  ] $/;"	v
+s:I3	autoload/airline/themes/kolor.vim	/^let s:I3 = [ '#e2e2e2' , '#4a4a4a' , 254 , 238 ]$/;"	v
+s:I3	autoload/airline/themes/laederon.vim	/^let s:I3 = [ '#1693a5' , '#2e2d2a' , 39 , 235 ] " crystallake & darkgravel$/;"	v
+s:I3	autoload/airline/themes/light.vim	/^let s:I3 = [ '#005f5f' , '#afff87' , 23  , 156 ]$/;"	v
+s:I3	autoload/airline/themes/luna.vim	/^let s:I3 = [ '#ffffff' , '#002b2b' , 231 , 23  ]$/;"	v
+s:I3	autoload/airline/themes/molokai.vim	/^let s:I3 = [ '#f8f8f0' , '#465457' , 253 , 67 ]$/;"	v
+s:I3	autoload/airline/themes/powerlineish.vim	/^let s:I3 = [ '#87d7ff' , '#005f87' , 117 , 24  ] " mediumcyan     & darkestblue$/;"	v
+s:I3	autoload/airline/themes/serene.vim	/^let s:I3 = [ '#767676' , s:guibg , 7   , s:termbg ]$/;"	v
+s:I3	autoload/airline/themes/simple.vim	/^let s:I3 = [ '#767676' , s:guibg, 243 , s:termbg ]$/;"	v
+s:I3	autoload/airline/themes/sol.vim	/^let s:I3 = [ '#343434' , '#b0b0b0' , 237 , 250 ]$/;"	v
+s:I3	autoload/airline/themes/ubaryd.vim	/^let s:I3 = [ '#f4cf86' , '#242321' , 222 , 235 ] " lighttannedskin & darkgravel$/;"	v
+s:I3	autoload/airline/themes/understated.vim	/^let s:I3 = ['#AFAF87', '#5F5F5F', 144, 59] " The middle block$/;"	v
+s:I3	autoload/airline/themes/wombat.vim	/^let s:I3 = [ '#FDE76E' , '#242424' , 227 , 234 ]$/;"	v
+s:I4	autoload/airline/themes/wombat.vim	/^let s:I4 = [ '#FADE3E' , 221 ]$/;"	v
+s:IA	autoload/airline/themes/badwolf.vim	/^let s:IA = [ s:N2[1] , s:N3[1] , s:N2[3] , s:N3[3] , '' ]$/;"	v
+s:IA	autoload/airline/themes/base16.vim	/^  let s:IA = [s:gui_dark_gray, s:gui_med_gray_hi, s:cterm_dark_gray, s:cterm_med_gray_hi, '']$/;"	v
+s:IA	autoload/airline/themes/bubblegum.vim	/^let s:IA = [s:gui_light_gray, s:gui_med_gray_hi, s:cterm_light_gray, s:cterm_med_gray_hi, '']$/;"	v
+s:IA	autoload/airline/themes/laederon.vim	/^let s:IA = [ s:N2[1] , s:N3[1] , s:N2[3], s:N3[3] , '' ]$/;"	v
+s:IA	autoload/airline/themes/luna.vim	/^let s:IA = [ '#4e4e4e' , '#002b2b' , 59 , 23 , '' ]$/;"	v
+s:IA	autoload/airline/themes/molokai.vim	/^let s:IA = [ '#1b1d1e' , '#465457' , 233 , 67 , '' ]$/;"	v
+s:IA	autoload/airline/themes/powerlineish.vim	/^let s:IA = [ s:N2[1] , s:N3[1] , s:N2[3] , s:N3[3] , '' ]$/;"	v
+s:IA	autoload/airline/themes/serene.vim	/^let s:IA  = [ '#4e4e4e' , s:guibg  , 239 , s:termbg  , '' ]$/;"	v
+s:IA	autoload/airline/themes/simple.vim	/^let s:IA  = [ '#4e4e4e' , s:guibg  , 239 , s:termbg  , '' ]$/;"	v
+s:IA	autoload/airline/themes/sol.vim	/^let s:IA = [ '#777777' , '#c7c7c7' , 244 , 251 , '' ]$/;"	v
+s:IA	autoload/airline/themes/ubaryd.vim	/^let s:IA = [ s:N2[1], s:N3[1], s:N2[3], s:N3[3], '' ]	$/;"	v
+s:IA	autoload/airline/themes/wombat.vim	/^let s:IA = [ '#767676' , s:N3[1] , 243 , s:N3[3] , '' ]$/;"	v
+s:IA1	autoload/airline/themes/dark.vim	/^let s:IA1 = [ '#4e4e4e' , '#1c1c1c' , 239 , 234 , '' ]$/;"	v
+s:IA1	autoload/airline/themes/kolor.vim	/^let s:IA1 = [ '#b2b2b2' , '#4a4a4a' , 247 , 238 , '' ]$/;"	v
+s:IA1	autoload/airline/themes/light.vim	/^let s:IA1 = [ '#666666' , '#b2b2b2' , 242 , 249 , '' ]$/;"	v
+s:IA1	autoload/airline/themes/murmur.vim	/^let s:IA1 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IA1	autoload/airline/themes/understated.vim	/^let s:IA1 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IA2	autoload/airline/themes/dark.vim	/^let s:IA2 = [ '#4e4e4e' , '#262626' , 239 , 235 , '' ]$/;"	v
+s:IA2	autoload/airline/themes/kolor.vim	/^let s:IA2 = [ '#b2b2b2' , '#4a4a4a' , 247 , 238 ]$/;"	v
+s:IA2	autoload/airline/themes/light.vim	/^let s:IA2 = [ '#8a8a8a' , '#d0d0d0' , 245 , 252 , '' ]$/;"	v
+s:IA2	autoload/airline/themes/murmur.vim	/^let s:IA2 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IA2	autoload/airline/themes/serene.vim	/^let s:IA2 = [ '#4e4e4e' , s:guisep , 239 , s:termsep , '' ]$/;"	v
+s:IA2	autoload/airline/themes/simple.vim	/^let s:IA2 = [ '#4e4e4e' , s:guibg2 , 239 , s:termbg2 , '' ]$/;"	v
+s:IA2	autoload/airline/themes/understated.vim	/^let s:IA2 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IA3	autoload/airline/themes/dark.vim	/^let s:IA3 = [ '#4e4e4e' , '#303030' , 239 , 236 , '' ]$/;"	v
+s:IA3	autoload/airline/themes/kolor.vim	/^let s:IA3 = [ '#b2b2b2' , '#4a4a4a' , 247 , 238 , '' ]$/;"	v
+s:IA3	autoload/airline/themes/light.vim	/^let s:IA3 = [ '#a8a8a8' , '#ffffff' , 248 , 255 , '' ]$/;"	v
+s:IA3	autoload/airline/themes/murmur.vim	/^let s:IA3 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IA3	autoload/airline/themes/understated.vim	/^let s:IA3 = ['#4E4E4E', '#1C1C1C', 239, 234, '']$/;"	v
+s:IM	autoload/airline/themes/wombat.vim	/^let s:IM = [ '#40403C' , 238 ]$/;"	v
+s:N1	autoload/airline/themes/badwolf.vim	/^let s:N1 = [ '#141413' , '#aeee00' , 232 , 154 ] " blackestgravel & lime$/;"	v
+s:N1	autoload/airline/themes/base16.vim	/^  let s:N1 = [s:gui_dark_gray, s:gui_green, s:cterm_dark_gray, s:cterm_green]$/;"	v
+s:N1	autoload/airline/themes/bubblegum.vim	/^let s:N1 = [s:gui_dark_gray, s:gui_green, s:cterm_dark_gray, s:cterm_green]$/;"	v
+s:N1	autoload/airline/themes/dark.vim	/^let s:N1   = [ '#00005f' , '#dfff00' , 17  , 190 ]$/;"	v
+s:N1	autoload/airline/themes/kolor.vim	/^let s:N1 = [ '#e2e2e2' , '#4f3598' , 254 , 56  ]$/;"	v
+s:N1	autoload/airline/themes/laederon.vim	/^let s:N1 = [ '#1a1a18' , '#ffffff' , 232 , 255 ] " blackestgravel & snow$/;"	v
+s:N1	autoload/airline/themes/light.vim	/^let s:N1 = [ '#ffffff' , '#005fff' , 255 , 27  ]$/;"	v
+s:N1	autoload/airline/themes/luna.vim	/^let s:N1 = [ '#ffffff' , '#005252' , 231  , 36 ]$/;"	v
+s:N1	autoload/airline/themes/molokai.vim	/^let s:N1 = [ '#080808' , '#e6db74' , 232 , 144 ] " mode$/;"	v
+s:N1	autoload/airline/themes/murmur.vim	/^let s:N1 = ['#FFFFFF', '#5F87FF', 15, s:normalbg]   " Outside blocks in normal mode$/;"	v
+s:N1	autoload/airline/themes/powerlineish.vim	/^let s:N1 = [ '#005f00' , '#afd700' , 22  , 148 ] " darkestgreen   & brightgreen$/;"	v
+s:N1	autoload/airline/themes/serene.vim	/^let s:N1 = [ '#00dfff' , s:guibg , 45  , s:termbg ]$/;"	v
+s:N1	autoload/airline/themes/simple.vim	/^let s:N1 = [ s:guibg , '#00dfff' , s:termbg , 45 ]$/;"	v
+s:N1	autoload/airline/themes/sol.vim	/^let s:N1 = [ '#343434' , '#a0a0a0' , 237 , 248 ]$/;"	v
+s:N1	autoload/airline/themes/ubaryd.vim	/^let s:N1 = [ '#141413' , '#c7b386' , 232 , 252 ] " blackestgravel & bleaksand$/;"	v
+s:N1	autoload/airline/themes/understated.vim	/^let s:N1 = ['#FFFFFF', '#5F87FF', 15, 69]  " Outside blocks in normal mode (mode and file position)$/;"	v
+s:N1	autoload/airline/themes/wombat.vim	/^let s:N1 = [ '#141413' , '#CAE682' , 232 , 192 ] " mode$/;"	v
+s:N2	autoload/airline/themes/badwolf.vim	/^let s:N2 = [ '#f4cf86' , '#45413b' , 222 , 238 ] " dirtyblonde    & deepgravel$/;"	v
+s:N2	autoload/airline/themes/base16.vim	/^  let s:N2 = [s:gui_light_gray, s:gui_med_gray_lo, s:cterm_light_gray, s:cterm_med_gray_lo]$/;"	v
+s:N2	autoload/airline/themes/bubblegum.vim	/^let s:N2 = [s:gui_light_gray, s:gui_med_gray_lo, s:cterm_light_gray, s:cterm_med_gray_lo]$/;"	v
+s:N2	autoload/airline/themes/dark.vim	/^let s:N2   = [ '#ffffff' , '#444444' , 255 , 238 ]$/;"	v
+s:N2	autoload/airline/themes/kolor.vim	/^let s:N2 = [ '#ff5fd7' , '#242322' , 206 , 234 ]$/;"	v
+s:N2	autoload/airline/themes/laederon.vim	/^let s:N2 = [ '#ffffff' , '#44403a' , 255, 238 ] " snow & deepgravel$/;"	v
+s:N2	autoload/airline/themes/light.vim	/^let s:N2 = [ '#000087' , '#00dfff' , 18  , 45  ]$/;"	v
+s:N2	autoload/airline/themes/luna.vim	/^let s:N2 = [ '#ffffff' , '#003f3f' , 231 , 29 ]$/;"	v
+s:N2	autoload/airline/themes/molokai.vim	/^let s:N2 = [ '#f8f8f0' , '#232526' , 253 , 16  ] " info$/;"	v
+s:N2	autoload/airline/themes/murmur.vim	/^let s:N2 = ['#AFAF87', '#5F5F5F', 39, s:termbg2]    " Middle block$/;"	v
+s:N2	autoload/airline/themes/powerlineish.vim	/^let s:N2 = [ '#9e9e9e' , '#303030' , 247 , 236 ] " gray8          & gray2$/;"	v
+s:N2	autoload/airline/themes/serene.vim	/^let s:N2 = [ '#ff5f00' , s:guibg , 202 , s:termbg ]$/;"	v
+s:N2	autoload/airline/themes/simple.vim	/^let s:N2 = [ '#ff5f00' , s:guibg2, 202 , s:termbg2 ]$/;"	v
+s:N2	autoload/airline/themes/sol.vim	/^let s:N2 = [ '#343434' , '#b3b3b3' , 237 , 250 ]$/;"	v
+s:N2	autoload/airline/themes/ubaryd.vim	/^let s:N2 = [ '#c7b386' , '#45413b' , 252, 238 ] " bleaksand & deepgravel$/;"	v
+s:N2	autoload/airline/themes/understated.vim	/^let s:N2 = ['#AFAF87', '#5F5F5F', 144, 59] " Next blocks inside (branch and file format)$/;"	v
+s:N2	autoload/airline/themes/wombat.vim	/^let s:N2 = [ '#CAE682' , '#32322F' , 192 , 236 ] " info$/;"	v
+s:N3	autoload/airline/themes/badwolf.vim	/^let s:N3 = [ '#8cffba' , '#242321' , 121 , 235 ] " saltwatertaffy & darkgravel$/;"	v
+s:N3	autoload/airline/themes/base16.vim	/^  let s:N3 = [s:gui_green, s:gui_med_gray_hi, s:cterm_green, s:cterm_med_gray_hi]$/;"	v
+s:N3	autoload/airline/themes/bubblegum.vim	/^let s:N3 = [s:gui_green, s:gui_med_gray_hi, s:cterm_green, s:cterm_med_gray_hi]$/;"	v
+s:N3	autoload/airline/themes/dark.vim	/^let s:N3   = [ '#9cffd3' , '#202020' , 85  , 234 ]$/;"	v
+s:N3	autoload/airline/themes/kolor.vim	/^let s:N3 = [ '#e2e2e2' , '#4a4a4a' , 254 , 238 ]$/;"	v
+s:N3	autoload/airline/themes/laederon.vim	/^let s:N3 = [ '#90a680' , '#2e2d2a' , 64, 235 ] " dilutedpaint & darkgravel$/;"	v
+s:N3	autoload/airline/themes/light.vim	/^let s:N3 = [ '#005fff' , '#afffff' , 27  , 159 ]$/;"	v
+s:N3	autoload/airline/themes/luna.vim	/^let s:N3 = [ '#ffffff' , '#002b2b' , 231  , 23 ]$/;"	v
+s:N3	autoload/airline/themes/molokai.vim	/^let s:N3 = [ '#f8f8f0' , '#465457' , 253 , 67  ] " statusline$/;"	v
+s:N3	autoload/airline/themes/powerlineish.vim	/^let s:N3 = [ '#ffffff' , '#121212' , 231 , 233 ] " white          & gray4$/;"	v
+s:N3	autoload/airline/themes/serene.vim	/^let s:N3 = [ '#767676' , s:guibg , 7   , s:termbg ]$/;"	v
+s:N3	autoload/airline/themes/simple.vim	/^let s:N3 = [ '#767676' , s:guibg, 243 , s:termbg]$/;"	v
+s:N3	autoload/airline/themes/sol.vim	/^let s:N3 = [ '#343434' , '#c7c7c7' , 237 , 252 ]$/;"	v
+s:N3	autoload/airline/themes/ubaryd.vim	/^let s:N3 = [ '#b88853' , '#242321' , 137, 235 ] " toffee & darkgravel$/;"	v
+s:N3	autoload/airline/themes/understated.vim	/^let s:N3 = ['#AFAF87', '#5F5F5F', 144, 59] " The middle block$/;"	v
+s:N3	autoload/airline/themes/wombat.vim	/^let s:N3 = [ '#CAE682' , '#242424' , 192 , 234 ] " statusline$/;"	v
+s:N4	autoload/airline/themes/badwolf.vim	/^let s:N4 = [ '#666462' , 241 ]                   " mediumgravel$/;"	v
+s:N4	autoload/airline/themes/laederon.vim	/^let s:N4 = [ '#777470' , 240 ] " gravel$/;"	v
+s:N4	autoload/airline/themes/ubaryd.vim	/^let s:N4 = [ '#857f78' , 243 ] " gravel$/;"	v
+s:N4	autoload/airline/themes/wombat.vim	/^let s:N4 = [ '#86CD74' , 113 ]                   " mode modified$/;"	v
+s:PA	autoload/airline/themes/badwolf.vim	/^let s:PA = [ '#f4cf86' , 222 ]                   " dirtyblonde$/;"	v
+s:PA	autoload/airline/themes/laederon.vim	/^let s:PA = [ '#ab3e5d' , 161 ] " raspberry$/;"	v
+s:PA	autoload/airline/themes/ubaryd.vim	/^let s:PA = [ '#f9ef6d' , 154 ] " bleaklemon$/;"	v
+s:PA	autoload/airline/themes/wombat.vim	/^let s:PA = [ '#94E42C' , 47 ]$/;"	v
+s:R1	autoload/airline/themes/kalisi.vim	/^let s:R1 = [ '#8e00da' , '#ffffff' , 23  , 231 ] $/;"	v
+s:R1	autoload/airline/themes/murmur.vim	/^let s:R1 = ['#FFFFFF', '#870000', 15, s:replacebg]  " Outside blocks in replace mode$/;"	v
+s:R1	autoload/airline/themes/wombat.vim	/^let s:R1 = [ '#141413' , '#E5786D' , 232 , 173 ]$/;"	v
+s:R2	autoload/airline/themes/kalisi.vim	/^let s:R2 = [ '#8e00da' , '#ce99ff' , 74  , 31  ] $/;"	v
+s:R2	autoload/airline/themes/murmur.vim	/^let s:R2 = ['#AFAF87', '#5F5F5F', 255, s:termbg2]   " Middle block$/;"	v
+s:R2	autoload/airline/themes/wombat.vim	/^let s:R2 = [ '#E5786D' , '#32322F' , 173 , 236 ]$/;"	v
+s:R3	autoload/airline/themes/kalisi.vim	/^let s:R3 = [ '#ce99ff' , '#8e00da' , 117 , 24  ] $/;"	v
+s:R3	autoload/airline/themes/wombat.vim	/^let s:R3 = [ '#E5786D' , '#242424' , 173 , 234 ]$/;"	v
+s:R4	autoload/airline/themes/wombat.vim	/^let s:R4 = [ '#E55345' , 203 ]$/;"	v
+s:RE	autoload/airline/themes/badwolf.vim	/^let s:RE = [ '#ff9eb8' , 211 ]                   " dress$/;"	v
+s:RE	autoload/airline/themes/laederon.vim	/^let s:RE = [ '#233e09' , 22 ] " oakleaf$/;"	v
+s:RE	autoload/airline/themes/powerlineish.vim	/^let s:RE = [ '#ffffff' , '#d70000' , 231 , 160 ] " white          & brightred$/;"	v
+s:RE	autoload/airline/themes/ubaryd.vim	/^let s:RE = [ '#c7915b' , 173 ] " nut$/;"	v
+s:V1	autoload/airline/themes/badwolf.vim	/^let s:V1 = [ '#141413' , '#ffa724' , 232 , 214 ] " blackestgravel & orange$/;"	v
+s:V1	autoload/airline/themes/base16.vim	/^  let s:V1 = [s:gui_dark_gray, s:gui_pink, s:cterm_dark_gray, s:cterm_pink]$/;"	v
+s:V1	autoload/airline/themes/bubblegum.vim	/^let s:V1 = [s:gui_dark_gray, s:gui_pink, s:cterm_dark_gray, s:cterm_pink]$/;"	v
+s:V1	autoload/airline/themes/dark.vim	/^let s:V1 = [ '#000000' , '#ffaf00' , 232 , 214 ]$/;"	v
+s:V1	autoload/airline/themes/kalisi.vim	/^let s:V1 = [ '#005f5f' , '#ffffff' , 23  , 231 ] $/;"	v
+s:V1	autoload/airline/themes/kolor.vim	/^let s:V1 = [ '#242322' , '#e6987a' , 234 , 180 ]$/;"	v
+s:V1	autoload/airline/themes/laederon.vim	/^let s:V1 = [ '#1a1a18' , '#ab3e5d' , 232 , 161 ] " blackestgravel & raspberry$/;"	v
+s:V1	autoload/airline/themes/light.vim	/^let s:V1 = [ '#ffffff' , '#ff5f00' , 255 , 202 ]$/;"	v
+s:V1	autoload/airline/themes/luna.vim	/^let s:V1 = [ '#ffff9a' , '#ff8036' , 222 , 208 ]$/;"	v
+s:V1	autoload/airline/themes/molokai.vim	/^let s:V1 = [ '#080808' , '#fd971f' , 232 , 208 ]$/;"	v
+s:V1	autoload/airline/themes/murmur.vim	/^let s:V1 = ['#FFFFFF', '#AF5F00', 15, s:visualbg]         " Outside blocks in visual mode$/;"	v
+s:V1	autoload/airline/themes/powerlineish.vim	/^let s:V1 = [ '#080808' , '#ffaf00' , 232 , 214 ] " gray3          & brightestorange$/;"	v
+s:V1	autoload/airline/themes/serene.vim	/^let s:V1 = [ '#dfdf00' , s:guibg , 184 , s:termbg ]$/;"	v
+s:V1	autoload/airline/themes/simple.vim	/^let s:V1 = [ s:guibg, '#dfdf00' , s:termbg , 184 ]$/;"	v
+s:V1	autoload/airline/themes/sol.vim	/^let s:V1 = [ '#ffff9a' , '#ff6003' , 222 , 202 ]$/;"	v
+s:V1	autoload/airline/themes/ubaryd.vim	/^let s:V1 = [ '#1c1b1a' , '#9a4820' , 233 , 88 ] " blackgravel & warmadobe$/;"	v
+s:V1	autoload/airline/themes/understated.vim	/^let s:V1 = ['#080808', '#FFAF00', 232, 214]$/;"	v
+s:V1	autoload/airline/themes/understated.vim	/^let s:V1 = ['#FFFFFF', '#AF5F00', 15, 130]$/;"	v
+s:V1	autoload/airline/themes/wombat.vim	/^let s:V1 = [ '#141413' , '#B5D3F3' , 232 , 153 ]$/;"	v
+s:V2	autoload/airline/themes/badwolf.vim	/^let s:V2 = [ '#000000' , '#fade3e' , 16  , 221 ] " coal           & dalespale$/;"	v
+s:V2	autoload/airline/themes/dark.vim	/^let s:V2 = [ '#000000' , '#ff5f00' , 232 , 202 ]$/;"	v
+s:V2	autoload/airline/themes/kalisi.vim	/^let s:V2 = [ '#5fafd7' , '#0087af' , 74  , 31  ] $/;"	v
+s:V2	autoload/airline/themes/kolor.vim	/^let s:V2 = [ '#dbc570' , '#242322' , 186 , 234 ]$/;"	v
+s:V2	autoload/airline/themes/laederon.vim	/^let s:V2 = [ '#000000' , '#908571' , 16 , 252 ] " coal & winterterrain$/;"	v
+s:V2	autoload/airline/themes/light.vim	/^let s:V2 = [ '#5f0000' , '#ffaf00' , 52  , 214 ]$/;"	v
+s:V2	autoload/airline/themes/luna.vim	/^let s:V2 = [ '#ffffff' , '#003f3f' , 231 , 29 ]$/;"	v
+s:V2	autoload/airline/themes/molokai.vim	/^let s:V2 = [ '#f8f8f0' , '#232526' , 253 , 16  ]$/;"	v
+s:V2	autoload/airline/themes/murmur.vim	/^let s:V2 = ['#AFAF87', '#5F5F5F', s:visualbg, s:termbg2]  " Middle block$/;"	v
+s:V2	autoload/airline/themes/serene.vim	/^let s:V2 = [ '#ff5f00' , s:guibg , 202 , s:termbg ]$/;"	v
+s:V2	autoload/airline/themes/simple.vim	/^let s:V2 = [ '#ff5f00' , s:guibg2, 202 , s:termbg2 ]$/;"	v
+s:V2	autoload/airline/themes/sol.vim	/^let s:V2 = [ '#343434' , '#a3a3a3' , 237 , 249 ]$/;"	v
+s:V2	autoload/airline/themes/ubaryd.vim	/^let s:V2 = [ '#000000' , '#88633f' , 16 , 95 ] " coal & cappuccino$/;"	v
+s:V2	autoload/airline/themes/understated.vim	/^let s:V2 = ['#AFAF87', '#5F5F5F', 144, 59]$/;"	v
+s:V2	autoload/airline/themes/wombat.vim	/^let s:V2 = [ '#B5D3F3' , '#32322F' , 153 , 236 ]$/;"	v
+s:V3	autoload/airline/themes/badwolf.vim	/^let s:V3 = [ '#000000' , '#b88853' , 16  , 137 ] " coal           & toffee$/;"	v
+s:V3	autoload/airline/themes/base16.vim	/^  let s:V3 = [s:gui_pink, s:gui_med_gray_hi, s:cterm_pink, s:cterm_med_gray_hi]$/;"	v
+s:V3	autoload/airline/themes/bubblegum.vim	/^let s:V3 = [s:gui_pink, s:gui_med_gray_hi, s:cterm_pink, s:cterm_med_gray_hi]$/;"	v
+s:V3	autoload/airline/themes/dark.vim	/^let s:V3 = [ '#ffffff' , '#5f0000' , 15  , 52  ]$/;"	v
+s:V3	autoload/airline/themes/kalisi.vim	/^let s:V3 = [ '#87d7ff' , '#005f87' , 117 , 24  ] $/;"	v
+s:V3	autoload/airline/themes/kolor.vim	/^let s:V3 = [ '#e2e2e2' , '#4a4a4a' , 254 , 238 ]$/;"	v
+s:V3	autoload/airline/themes/laederon.vim	/^let s:V3 = [ '#ab3e5d' , '#8c7f77' , 161 , 245 ] " raspberry & wetcoldterrain$/;"	v
+s:V3	autoload/airline/themes/light.vim	/^let s:V3 = [ '#df5f00' , '#ffff87' , 166 , 228 ]$/;"	v
+s:V3	autoload/airline/themes/luna.vim	/^let s:V3 = [ '#ffffff' , '#002b2b' , 231  , 23  ]$/;"	v
+s:V3	autoload/airline/themes/molokai.vim	/^let s:V3 = [ '#f8f8f0' , '#465457' , 253 , 67  ]$/;"	v
+s:V3	autoload/airline/themes/serene.vim	/^let s:V3 = [ '#767676' , s:guibg , 7   , s:termbg ]$/;"	v
+s:V3	autoload/airline/themes/simple.vim	/^let s:V3 = [ '#767676' , s:guibg, 243 , s:termbg ]$/;"	v
+s:V3	autoload/airline/themes/sol.vim	/^let s:V3 = [ '#343434' , '#b0b0b0' , 237 , 250 ]$/;"	v
+s:V3	autoload/airline/themes/ubaryd.vim	/^let s:V3 = [ '#88633f' , '#c7b386' , 95 , 252 ] " cappuccino & bleaksand$/;"	v
+s:V3	autoload/airline/themes/understated.vim	/^let s:V3 = ['#AFAF87', '#5F5F5F', 144, 59]$/;"	v
+s:V3	autoload/airline/themes/wombat.vim	/^let s:V3 = [ '#B5D3F3' , '#242424' , 153 , 234 ]$/;"	v
+s:V4	autoload/airline/themes/badwolf.vim	/^let s:V4 = [ '#c7915b' , 173 ]                   " coffee$/;"	v
+s:V4	autoload/airline/themes/laederon.vim	/^let s:V4 = [ '#515744' , 101 ] " lichen$/;"	v
+s:V4	autoload/airline/themes/ubaryd.vim	/^let s:V4 = [ '#c14c3d' , 160 ] " tannedumbrella$/;"	v
+s:V4	autoload/airline/themes/wombat.vim	/^let s:V4 = [ '#7CB0E6' , 111 ]$/;"	v
+s:WI	autoload/airline/themes/luna.vim	/^let s:WI = [ '#ffffff', '#5f0000', 231, 88 ]$/;"	v
+s:WI	autoload/airline/themes/sol.vim	/^let s:WI = [ '#eeeeee', '#e33900', 255, 166 ]$/;"	v
+s:accents	autoload/airline/highlighter.vim	/^let s:accents = {}$/;"	v
+s:active_winnr	autoload/airline/extensions.vim	/^let s:active_winnr = -1$/;"	v
+s:airline_initialized	plugin/airline.vim	/^let s:airline_initialized = 0$/;"	v
+s:airline_tagbar_last_lookup_time	autoload/airline/extensions/tagbar.vim	/^let s:airline_tagbar_last_lookup_time = 0$/;"	v
+s:airline_tagbar_last_lookup_val	autoload/airline/extensions/tagbar.vim	/^let s:airline_tagbar_last_lookup_val = ''$/;"	v
+s:airline_theme_defined	plugin/airline.vim	/^let s:airline_theme_defined = 0$/;"	v
+s:alert	autoload/airline/themes/murmur.vim	/^let s:alert= 88     " Modefied file alert color$/;"	v
+s:buf_min_count	autoload/airline/extensions/tabline.vim	/^let s:buf_min_count = get(g:, 'airline#extensions#tabline#buffer_min_count', 0)$/;"	v
+s:buf_modified_symbol	autoload/airline/extensions/tabline/default.vim	/^let s:buf_modified_symbol = g:airline_symbols.modified$/;"	v
+s:buf_nr_format	autoload/airline/extensions/tabline/default.vim	/^let s:buf_nr_format = get(g:, 'airline#extensions#tabline#buffer_nr_format', '%s: ')$/;"	v
+s:buf_nr_show	autoload/airline/extensions/tabline/default.vim	/^let s:buf_nr_show = get(g:, 'airline#extensions#tabline#buffer_nr_show', 0)$/;"	v
+s:builder	t/builder.vim	/^    let s:builder = airline#builder#new({'active': 0})$/;"	v
+s:builder	t/builder.vim	/^    let s:builder = airline#builder#new({'active': 1})$/;"	v
+s:builder	t/extensions_default.vim	/^    let s:builder = airline#builder#new({'active': 1})$/;"	v
+s:builder_context	autoload/airline/extensions/tabline.vim	/^  let s:builder_context.left_alt_sep = get(g:, 'airline#extensions#tabline#left_alt_sep' , "\\ue0b1")$/;"	v
+s:builder_context	autoload/airline/extensions/tabline.vim	/^  let s:builder_context.left_alt_sep = get(g:, 'airline#extensions#tabline#left_alt_sep' , '|')$/;"	v
+s:builder_context	autoload/airline/extensions/tabline.vim	/^  let s:builder_context.left_sep     = get(g:, 'airline#extensions#tabline#left_sep'     , "\\ue0b0")$/;"	v
+s:builder_context	autoload/airline/extensions/tabline.vim	/^  let s:builder_context.left_sep     = get(g:, 'airline#extensions#tabline#left_sep'     , ' ')$/;"	v
+s:builder_context	autoload/airline/extensions/tabline.vim	/^let s:builder_context = {$/;"	v
+s:close_symbol	autoload/airline/extensions/tabline.vim	/^let s:close_symbol = get(g:, 'airline#extensions#tabline#close_symbol', 'X')$/;"	v
+s:color_template	autoload/airline/extensions/ctrlp.vim	/^let s:color_template = get(g:, 'airline#extensions#ctrlp#color_template', 'insert')$/;"	v
+s:color_template	autoload/airline/extensions/promptline.vim	/^let s:color_template = get(g:, 'airline#extensions#promptline#color_template', 'normal')$/;"	v
+s:color_template	autoload/airline/extensions/tmuxline.vim	/^let s:color_template = get(g:, 'airline#extensions#tmuxline#color_template', 'normal')$/;"	v
+s:column_display	autoload/airline/extensions/csv.vim	/^let s:column_display = get(g:, 'airline#extensions#csv#column_display', 'Number')$/;"	v
+s:contexts	autoload/airline.vim	/^let s:contexts = {}$/;"	v
+s:core_funcrefs	autoload/airline.vim	/^let s:core_funcrefs = [$/;"	v
+s:cterm_blue	autoload/airline/themes/base16.vim	/^  let s:cterm_blue = 67$/;"	v
+s:cterm_blue	autoload/airline/themes/bubblegum.vim	/^let s:cterm_blue = 110$/;"	v
+s:cterm_dark_gray	autoload/airline/themes/base16.vim	/^  let s:cterm_dark_gray = 234$/;"	v
+s:cterm_dark_gray	autoload/airline/themes/bubblegum.vim	/^let s:cterm_dark_gray = 236$/;"	v
+s:cterm_green	autoload/airline/themes/base16.vim	/^  let s:cterm_green = 151$/;"	v
+s:cterm_green	autoload/airline/themes/bubblegum.vim	/^let s:cterm_green = 150$/;"	v
+s:cterm_light_gray	autoload/airline/themes/base16.vim	/^  let s:cterm_light_gray = 239$/;"	v
+s:cterm_light_gray	autoload/airline/themes/bubblegum.vim	/^let s:cterm_light_gray = 249$/;"	v
+s:cterm_med_gray_hi	autoload/airline/themes/base16.vim	/^  let s:cterm_med_gray_hi = 236$/;"	v
+s:cterm_med_gray_hi	autoload/airline/themes/bubblegum.vim	/^let s:cterm_med_gray_hi = 238$/;"	v
+s:cterm_med_gray_lo	autoload/airline/themes/base16.vim	/^  let s:cterm_med_gray_lo = 237$/;"	v
+s:cterm_med_gray_lo	autoload/airline/themes/bubblegum.vim	/^let s:cterm_med_gray_lo = 237$/;"	v
+s:cterm_orange	autoload/airline/themes/base16.vim	/^  let s:cterm_orange = 173$/;"	v
+s:cterm_orange	autoload/airline/themes/bubblegum.vim	/^let s:cterm_orange = 179$/;"	v
+s:cterm_pink	autoload/airline/themes/base16.vim	/^  let s:cterm_pink = 182$/;"	v
+s:cterm_pink	autoload/airline/themes/bubblegum.vim	/^let s:cterm_pink = 182$/;"	v
+s:cterm_purple	autoload/airline/themes/base16.vim	/^  let s:cterm_purple = 139$/;"	v
+s:cterm_purple	autoload/airline/themes/bubblegum.vim	/^let s:cterm_purple = 146$/;"	v
+s:cterm_red	autoload/airline/themes/base16.vim	/^  let s:cterm_red = 131$/;"	v
+s:cterm_red	autoload/airline/themes/bubblegum.vim	/^let s:cterm_red = 174$/;"	v
+s:current_bufnr	autoload/airline/extensions/tabline.vim	/^let s:current_bufnr = -1$/;"	v
+s:current_modified	autoload/airline/extensions/tabline.vim	/^let s:current_modified = 0$/;"	v
+s:current_tabline	autoload/airline/extensions/tabline.vim	/^let s:current_tabline = ''$/;"	v
+s:current_tabnr	autoload/airline/extensions/tabline.vim	/^let s:current_tabnr = -1$/;"	v
+s:default_checks	autoload/airline/extensions/whitespace.vim	/^let s:default_checks = ['indent', 'trailing']$/;"	v
+s:enabled	autoload/airline/extensions/whitespace.vim	/^let s:enabled = get(g:, 'airline#extensions#whitespace#enabled', 1)$/;"	v
+s:excludes	autoload/airline/extensions/tabline.vim	/^let s:excludes = get(g:, 'airline#extensions#tabline#excludes', [])$/;"	v
+s:ext	autoload/airline/extensions.vim	/^let s:ext = {}$/;"	v
+s:ext	autoload/airline/extensions.vim	/^let s:ext._theme_funcrefs = []$/;"	v
+s:filetype_overrides	autoload/airline/extensions.vim	/^let s:filetype_overrides = {$/;"	v
+s:filetype_regex_overrides	autoload/airline/extensions.vim	/^let s:filetype_regex_overrides = {}$/;"	v
+s:flags	autoload/airline/extensions/tagbar.vim	/^let s:flags = get(g:, 'airline#extensions#tagbar#flags', '')$/;"	v
+s:fmod	autoload/airline/extensions/tabline/default.vim	/^let s:fmod = get(g:, 'airline#extensions#tabline#fnamemod', ':~:.')$/;"	v
+s:fnamecollapse	autoload/airline/extensions/tabline/default.vim	/^let s:fnamecollapse = get(g:, 'airline#extensions#tabline#fnamecollapse', 1)$/;"	v
+s:formatter	autoload/airline/extensions/tabline.vim	/^let s:formatter = get(g:, 'airline#extensions#tabline#formatter', 'default')$/;"	v
+s:git_dirs	autoload/airline/extensions/branch.vim	/^let s:git_dirs = {}$/;"	v
+s:gui_blue	autoload/airline/themes/base16.vim	/^  let s:gui_blue = '#6a9fb5'$/;"	v
+s:gui_blue	autoload/airline/themes/bubblegum.vim	/^let s:gui_blue = '#87afd7'$/;"	v
+s:gui_dark_gray	autoload/airline/themes/base16.vim	/^  let s:gui_dark_gray = '#202020'$/;"	v
+s:gui_dark_gray	autoload/airline/themes/bubblegum.vim	/^let s:gui_dark_gray = '#303030'$/;"	v
+s:gui_green	autoload/airline/themes/base16.vim	/^  let s:gui_green = '#99cc99'$/;"	v
+s:gui_green	autoload/airline/themes/bubblegum.vim	/^let s:gui_green = '#afd787'$/;"	v
+s:gui_light_gray	autoload/airline/themes/base16.vim	/^  let s:gui_light_gray = '#505050'$/;"	v
+s:gui_light_gray	autoload/airline/themes/bubblegum.vim	/^let s:gui_light_gray = '#b2b2b2'$/;"	v
+s:gui_med_gray_hi	autoload/airline/themes/base16.vim	/^  let s:gui_med_gray_hi = '#303030'$/;"	v
+s:gui_med_gray_hi	autoload/airline/themes/bubblegum.vim	/^let s:gui_med_gray_hi = '#444444'$/;"	v
+s:gui_med_gray_lo	autoload/airline/themes/base16.vim	/^  let s:gui_med_gray_lo = '#3a3a3a'$/;"	v
+s:gui_med_gray_lo	autoload/airline/themes/bubblegum.vim	/^let s:gui_med_gray_lo = '#3a3a3a'$/;"	v
+s:gui_orange	autoload/airline/themes/base16.vim	/^  let s:gui_orange = '#d28445'$/;"	v
+s:gui_orange	autoload/airline/themes/bubblegum.vim	/^let s:gui_orange = '#d7af5f'$/;"	v
+s:gui_pink	autoload/airline/themes/base16.vim	/^  let s:gui_pink = '#d7afd7'$/;"	v
+s:gui_pink	autoload/airline/themes/bubblegum.vim	/^let s:gui_pink = '#d7afd7'$/;"	v
+s:gui_purple	autoload/airline/themes/base16.vim	/^  let s:gui_purple = '#aa759f'$/;"	v
+s:gui_purple	autoload/airline/themes/bubblegum.vim	/^let s:gui_purple = '#afafd7'$/;"	v
+s:gui_red	autoload/airline/themes/base16.vim	/^  let s:gui_red = '#ac4142'$/;"	v
+s:gui_red	autoload/airline/themes/bubblegum.vim	/^let s:gui_red = '#d78787'$/;"	v
+s:guibg	autoload/airline/themes/serene.vim	/^let s:guibg = '#080808'$/;"	v
+s:guibg	autoload/airline/themes/simple.vim	/^let s:guibg = '#080808'$/;"	v
+s:guibg2	autoload/airline/themes/simple.vim	/^let s:guibg2 = '#1c1c1c'$/;"	v
+s:guisep	autoload/airline/themes/serene.vim	/^let s:guisep = '#303030'$/;"	v
+s:has_fugitive	autoload/airline/extensions/branch.vim	/^let s:has_fugitive = exists('*fugitive#head')$/;"	v
+s:has_lawrencium	autoload/airline/extensions/branch.vim	/^let s:has_lawrencium = exists('*lawrencium#statusline')$/;"	v
+s:has_vcscommand	autoload/airline/extensions/branch.vim	/^let s:has_vcscommand = get(g:, 'airline#extensions#branch#use_vcscommand', 0) && exists('*VCSCommandGetStatusLine')$/;"	v
+s:hunk_symbols	autoload/airline/extensions/hunks.vim	/^let s:hunk_symbols = get(g:, 'airline#extensions#hunks#hunk_symbols', ['+', '~', '-'])$/;"	v
+s:inactive_funcrefs	autoload/airline.vim	/^let s:inactive_funcrefs = []$/;"	v
+s:indent_algo	autoload/airline/extensions/whitespace.vim	/^let s:indent_algo = get(g:, 'airline#extensions#whitespace#mixed_indent_algo', 0)$/;"	v
+s:insertbg	autoload/airline/themes/murmur.vim	/^let s:insertbg= 70  " Background for insert mode and file position blocks$/;"	v
+s:is_win32term	autoload/airline/highlighter.vim	/^let s:is_win32term = (has('win32') || has('win64')) && !has('gui_running')$/;"	v
+s:layout	autoload/airline/extensions/default.vim	/^let s:layout = get(g:, 'airline#extensions#default#layout', [$/;"	v
+s:loaded	autoload/airline/init.vim	/^let s:loaded = 0$/;"	v
+s:max_lines	autoload/airline/extensions/whitespace.vim	/^let s:max_lines = get(g:, 'airline#extensions#whitespace#max_lines', 20000)$/;"	v
+s:mixed_indent_format	autoload/airline/extensions/whitespace.vim	/^let s:mixed_indent_format = get(g:, 'airline#extensions#whitespace#mixed_indent_format', 'mixed-indent[%s]')$/;"	v
+s:non_zero_only	autoload/airline/extensions/hunks.vim	/^let s:non_zero_only = get(g:, 'airline#extensions#hunks#non_zero_only', 0)$/;"	v
+s:normalbg	autoload/airline/themes/murmur.vim	/^let s:normalbg= 27  " Background for normal mode and file position blocks$/;"	v
+s:overwrite	autoload/airline/extensions/bufferline.vim	/^let s:overwrite = get(g:, 'airline#extensions#bufferline#overwrite_variables', 1)$/;"	v
+s:parts	autoload/airline/parts.vim	/^let s:parts = {}$/;"	v
+s:prompt_snapshot_file	autoload/airline/extensions/promptline.vim	/^let s:prompt_snapshot_file = get(g:, 'airline#extensions#promptline#snapshot_file', '')$/;"	v
+s:prototype	autoload/airline/builder.vim	/^let s:prototype = {}$/;"	v
+s:replacebg	autoload/airline/themes/murmur.vim	/^let s:replacebg=88  " Background for replace mode and file position blocks$/;"	v
+s:script_path	autoload/airline/extensions.vim	/^let s:script_path = tolower(resolve(expand('<sfile>:p:h')))$/;"	v
+s:section_truncate_width	autoload/airline/extensions/default.vim	/^let s:section_truncate_width = get(g:, 'airline#extensions#default#section_truncate_width', {$/;"	v
+s:sections	autoload/airline.vim	/^let s:sections = ['a','b','c','gutter','x','y','z','warning']$/;"	v
+s:sections	t/init.vim	/^let s:sections = ['a', 'b', 'c', 'gutter', 'x', 'y', 'z', 'warning']$/;"	v
+s:separators	autoload/airline/highlighter.vim	/^let s:separators = {}$/;"	v
+s:show_buffers	autoload/airline/extensions/tabline.vim	/^let s:show_buffers = get(g:, 'airline#extensions#tabline#show_buffers', 1)$/;"	v
+s:show_message	autoload/airline/extensions/whitespace.vim	/^  let s:show_message = g:airline_detect_whitespace == 1$/;"	v
+s:show_message	autoload/airline/extensions/whitespace.vim	/^  let s:show_message = get(g:, 'airline#extensions#whitespace#show_message', 1)$/;"	v
+s:show_tab_nr	autoload/airline/extensions/tabline.vim	/^let s:show_tab_nr = get(g:, 'airline#extensions#tabline#show_tab_nr', 1)$/;"	v
+s:show_tab_type	autoload/airline/extensions/tabline.vim	/^let s:show_tab_type = get(g:, 'airline#extensions#tabline#show_tab_type', 1)$/;"	v
+s:skip_symbol	autoload/airline/extensions/tabline/unique_tail_improved.vim	/^let s:skip_symbol = '…'$/;"	v
+s:source_func	autoload/airline/extensions/hunks.vim	/^let s:source_func = ''$/;"	v
+s:spc	autoload/airline/extensions/example.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:spc	autoload/airline/extensions/tabline.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:spc	autoload/airline/extensions/tagbar.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:spc	autoload/airline/extensions/virtualenv.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:spc	autoload/airline/section.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:spc	autoload/airline/util.vim	/^let s:spc = g:airline_symbols.space$/;"	v
+s:symbol	autoload/airline/extensions/whitespace.vim	/^let s:symbol = get(g:, 'airline#extensions#whitespace#symbol', g:airline_symbols.whitespace)$/;"	v
+s:tab_min_count	autoload/airline/extensions/tabline.vim	/^let s:tab_min_count = get(g:, 'airline#extensions#tabline#tab_min_count', 0)$/;"	v
+s:tab_nr_type	autoload/airline/extensions/tabline.vim	/^let s:tab_nr_type = get(g:, 'airline#extensions#tabline#tab_nr_type', 0)$/;"	v
+s:termbg	autoload/airline/themes/murmur.vim	/^let s:termbg = 237  " Background for branch and file format blocks$/;"	v
+s:termbg	autoload/airline/themes/serene.vim	/^let s:termbg = 232$/;"	v
+s:termbg	autoload/airline/themes/simple.vim	/^let s:termbg = 232$/;"	v
+s:termbg2	autoload/airline/themes/murmur.vim	/^let s:termbg2= 234  " Background for middle block$/;"	v
+s:termbg2	autoload/airline/themes/simple.vim	/^let s:termbg2= 234$/;"	v
+s:termsep	autoload/airline/themes/serene.vim	/^let s:termsep = 236$/;"	v
+s:tmuxline_snapshot_file	autoload/airline/extensions/tmuxline.vim	/^let s:tmuxline_snapshot_file = get(g:, 'airline#extensions#tmuxline#snapshot_file', '')$/;"	v
+s:trailing_format	autoload/airline/extensions/whitespace.vim	/^let s:trailing_format = get(g:, 'airline#extensions#whitespace#trailing_format', 'trailing[%s]')$/;"	v
+s:visualbg	autoload/airline/themes/murmur.vim	/^let s:visualbg= 166 " Background for visual mode and file position blocks$/;"	v
+stl	t/builder.vim	/^    let stl = s:builder.build()$/;"	v
+stl	t/extensions_default.vim	/^    let stl = s:builder.build()$/;"	v
+sync_active_winnr	autoload/airline/extensions.vim	/^function! s:sync_active_winnr()$/;"	f
+toggle_off	autoload/airline/extensions/tabline.vim	/^function! s:toggle_off()$/;"	f
+toggle_on	autoload/airline/extensions/tabline.vim	/^function! s:toggle_on()$/;"	f
+wrap_accent	autoload/airline/section.vim	/^function! s:wrap_accent(part, value)$/;"	f

@@ -1,0 +1,1510 @@
+########################################
+# Ruby snippets - for Rails, see below #
+########################################
+
+# encoding for Ruby 1.9
+snippet enc
+options word
+	# encoding: utf-8
+<<<<<<< HEAD
+
+# #!/usr/bin/env ruby
+=======
+snippet frozen
+	# frozen_string_literal: true
+>>>>>>> 1d9d0413fc77bc1bb893e988f68e19f9b0bdb97b
+snippet #!
+options word
+	#!/usr/bin/env ruby
+	# encoding: utf-8
+
+# New Block
+snippet =b
+options word
+	=begin rdoc
+		${0}
+	=end
+snippet prot
+options word
+	protected
+
+	${0}
+snippet priv
+options word
+	private
+
+	${0}
+snippet y
+options word
+	:yields: ${0:arguments}
+snippet rb
+options word
+	#!/usr/bin/env ruby
+snippet beg
+options word
+	begin
+		${0}
+	rescue ${1:Exception} => ${2:e}
+	end
+
+snippet req require
+options word
+	require "${1}"
+snippet reqr
+options word
+	require_relative "${1}"
+snippet #
+options word
+	# =>
+snippet end
+options word
+	__END__
+snippet case
+options word
+	case ${1:object}
+	when ${2:condition}
+		${0}
+	end
+snippet when
+options word
+	when ${1:condition}
+		${0}
+snippet def
+options word
+	def ${1:method_name}
+		${0}
+	end
+snippet deft
+options word
+	def test_${1:case_name}
+		${0}
+	end
+snippet descendants
+options word
+	class Class
+		def descendants
+			ObjectSpace.each_object(::Class).select {|klass| klass < self }
+		end
+	end
+snippet if
+options word
+	if ${1:condition}
+		${0}
+	end
+snippet ife
+options word
+	if ${1:condition}
+		${2}
+	else
+		${0}
+	end
+snippet eif
+options word
+	elsif ${1:condition}
+		${0}
+snippet unless
+options word
+	unless ${1:condition}
+		${0}
+	end
+snippet wh
+options word
+	while ${1:condition}
+		${0}
+	end
+snippet for
+options word
+	for ${1:e} in ${2:c}
+		${0}
+	end
+snippet until
+options word
+	until ${1:condition}
+		${0}
+	end
+snippet cla class .. end
+options word
+	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+		${0}
+	end
+snippet cla class .. initialize .. end
+options word
+	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+		def initialize(${2:args})
+			${0}
+		end
+	end
+snippet cla class .. < ParentClass .. initialize .. end
+options word
+	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < ${2:ParentClass}
+		def initialize(${3:args})
+			${0}
+		end
+	end
+snippet cla ClassName = Struct .. do .. end
+options word
+	${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} = Struct.new(:${2:attr_names}) do
+		def ${3:method_name}
+			${0}
+		end
+	end
+snippet cla class BlankSlate .. initialize .. end
+options word
+	class ${0:BlankSlate}
+		instance_methods.each { |meth| undef_method(meth) unless meth =~ /\A__/ }
+	end
+snippet cla class << self .. end
+options word
+	class << ${1:self}
+		${0}
+	end
+# class .. < DelegateClass .. initialize .. end
+snippet cla-
+options word
+	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`} < DelegateClass(${2:ParentClass})
+		def initialize(${3:args})
+			super(${4:del_obj})
+
+			${0}
+		end
+	end
+snippet mod module .. end
+options word
+	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+		${0}
+	end
+snippet mod module .. module_function .. end
+options word
+	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+		module_function
+
+		${0}
+	end
+snippet mod module .. ClassMethods .. end
+options word
+	module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+		module ClassMethods
+			${0}
+		end
+
+		module InstanceMethods
+
+		end
+
+		def self.included(receiver)
+			receiver.extend         ClassMethods
+			receiver.send :include, InstanceMethods
+		end
+	end
+# attr_reader
+snippet r
+options word
+	attr_reader :${0:attr_names}
+# attr_writer
+snippet w
+options word
+	attr_writer :${0:attr_names}
+# attr_accessor
+snippet rw
+options word
+	attr_accessor :${0:attr_names}
+snippet atp
+options word
+	attr_protected :${0:attr_names}
+snippet ata
+options word
+	attr_accessible :${0:attr_names}
+snippet ana
+options word
+	accepts_nested_attributes_for :${0:association}
+# ivc == instance variable cache
+snippet ivc
+options word
+	@${1:variable_name} ||= ${0:cached_value}
+# include Enumerable
+snippet Enum
+options word
+	include Enumerable
+
+	def each(&block)
+		${0}
+	end
+# include Comparable
+snippet Comp
+options word
+	include Comparable
+
+	def <=>(other)
+		${0}
+	end
+# extend Forwardable
+snippet Forw-
+options word
+	extend Forwardable
+# def self
+snippet defs
+options word
+	def self.${1:class_method_name}
+		${0}
+	end
+# def initialize
+snippet definit
+options word
+	def initialize(${1:args})
+		${0}
+	end
+# def method_missing
+snippet defmm
+options word
+	def method_missing(meth, *args, &blk)
+		${0}
+	end
+snippet defd
+options word
+	def_delegator :${1:@del_obj}, :${2:del_meth}, :${0:new_name}
+snippet defds
+options word
+	def_delegators :${1:@del_obj}, :${0:del_methods}
+snippet am
+options word
+	alias_method :${1:new_name}, :${0:old_name}
+snippet app
+options word
+	if __FILE__ == $PROGRAM_NAME
+		${0}
+	end
+# usage_if()
+snippet usai
+options word
+	if ARGV.${1}
+		abort "Usage: #{$PROGRAM_NAME} ${2:ARGS_GO_HERE}"${0}
+	end
+# usage_unless()
+snippet usau
+options word
+	unless ARGV.${1}
+		abort "Usage: #{$PROGRAM_NAME} ${2:ARGS_GO_HERE}"${0}
+	end
+snippet array
+options word
+	Array.new(${1:10}) { |${2:i}| ${0} }
+snippet hash
+options word
+	Hash.new { |${1:hash}, ${2:key}| $1[$2] = ${0} }
+snippet file File.foreach() { |line| .. }
+options word
+	File.foreach(${1:"path/to/file"}) { |${2:line}| ${0} }
+snippet file File.read()
+options word
+	File.read(${1:"path/to/file"})
+snippet Dir Dir.global() { |file| .. }
+options word
+	Dir.glob(${1:"dir/glob/*"}) { |${2:file}| ${0} }
+snippet Dir Dir[".."]
+options word
+	Dir[${1:"glob/**/*.rb"}]
+snippet dir
+options word
+	Filename.dirname(__FILE__)
+snippet deli
+options word
+	delete_if { |${1:e}| ${0} }
+snippet fil
+options word
+	fill(${1:range}) { |${2:i}| ${0} }
+# flatten_once()
+snippet flao
+options word
+	inject(Array.new) { |${1:arr}, ${2:a}| $1.push(*$2)}
+snippet zip
+options word
+	zip(${1:enums}) { |${2:row}| ${0} }
+# downto(0) { |n| .. }
+snippet dow
+options word
+	downto(${1:0}) { |${2:n}| ${0} }
+snippet ste
+options word
+	step(${1:2}) { |${2:n}| ${0} }
+snippet tim
+options word
+	times { |${1:n}| ${0} }
+snippet upt
+options word
+	upto(${1:1.0/0.0}) { |${2:n}| ${0} }
+snippet loo
+options word
+	loop { ${0} }
+snippet ea
+options word
+	each { |${1:e}| ${0} }
+snippet ead
+options word
+	each do |${1:e}|
+		${0}
+	end
+snippet eab
+options word
+	each_byte { |${1:byte}| ${0} }
+snippet eac- each_char { |chr| .. }
+options word
+	each_char { |${1:chr}| ${0} }
+snippet eac- each_cons(..) { |group| .. }
+options word
+	each_cons(${1:2}) { |${2:group}| ${0} }
+snippet eai
+options word
+	each_index { |${1:i}| ${0} }
+snippet eaid
+options word
+	each_index do |${1:i}|
+		${0}
+	end
+snippet eak
+options word
+	each_key { |${1:key}| ${0} }
+snippet eakd
+options word
+	each_key do |${1:key}|
+		${0}
+	end
+snippet eal
+options word
+	each_line { |${1:line}| ${0} }
+snippet eald
+options word
+	each_line do |${1:line}|
+		${0}
+	end
+snippet eap
+options word
+	each_pair { |${1:name}, ${2:val}| ${0} }
+snippet eapd
+options word
+	each_pair do |${1:name}, ${2:val}|
+		${0}
+	end
+snippet eas-
+options word
+	each_slice(${1:2}) { |${2:group}| ${0} }
+snippet easd-
+options word
+	each_slice(${1:2}) do |${2:group}|
+		${0}
+	end
+snippet eav
+options word
+	each_value { |${1:val}| ${0} }
+snippet eavd
+options word
+	each_value do |${1:val}|
+		${0}
+	end
+snippet eawi
+options word
+	each_with_index { |${1:e}, ${2:i}| ${0} }
+
+snippet eawid
+options word
+	each_with_index do |${1:e}, ${2:i}|
+		${0}
+	end
+snippet eawo
+options word
+	each_with_object(${1:init}) { |${2:e}, ${3:var}| ${0} }
+snippet eawod
+options word
+	each_with_object(${1:init}) do |${2:e}, ${3:var}|
+		${0}
+	end
+snippet reve
+options word
+	reverse_each { |${1:e}| ${0} }
+snippet reved
+options word
+	reverse_each do |${1:e}|
+		${0}
+	end
+snippet inj
+options word
+	inject(${1:init}) { |${2:mem}, ${3:var}| ${0} }
+snippet injd
+options word
+	inject(${1:init}) do |${2:mem}, ${3:var}|
+		${0}
+	end
+snippet red
+options word
+	reduce(${1:init}) { |${2:mem}, ${3:var}| ${0} }
+snippet redd
+options word
+	reduce(${1:init}) do |${2:mem}, ${3:var}|
+		${0}
+	end
+snippet map
+options word
+	map { |${1:e}| ${0} }
+snippet mapd
+options word
+	map do |${1:e}|
+		${0}
+	end
+snippet mapwi-
+options word
+	enum_with_index.map { |${1:e}, ${2:i}| ${0} }
+snippet sor
+options word
+	sort { |a, b| ${0} }
+snippet sorb
+options word
+	sort_by { |${1:e}| ${0} }
+snippet ran
+options word
+	sort_by { rand }
+snippet all
+options word
+	all? { |${1:e}| ${0} }
+snippet any
+options word
+	any? { |${1:e}| ${0} }
+snippet cl
+options word
+	classify { |${1:e}| ${0} }
+snippet col
+options word
+	collect { |${1:e}| ${0} }
+snippet cold
+options word
+	collect do |${1:e}|
+		${0}
+	end
+snippet det
+options word
+	detect { |${1:e}| ${0} }
+snippet detd
+options word
+	detect do |${1:e}|
+		${0}
+	end
+snippet fet
+options word
+	fetch(${1:name}) { |${2:key}| ${0} }
+snippet fin
+options word
+	find { |${1:e}| ${0} }
+snippet find
+options word
+	find do |${1:e}|
+		${0}
+	end
+snippet fina
+options word
+	find_all { |${1:e}| ${0} }
+snippet finad
+options word
+	find_all do |${1:e}|
+		${0}
+	end
+snippet gre
+options word
+	grep(${1:/pattern/}) { |${2:match}| ${0} }
+snippet sub
+options word
+	${1:g}sub(${2:/pattern/}) { |${3:match}| ${0} }
+snippet sca
+options word
+	scan(${1:/pattern/}) { |${2:match}| ${0} }
+snippet scad
+options word
+	scan(${1:/pattern/}) do |${2:match}|
+		${0}
+	end
+snippet max
+options word
+	max { |a, b| ${0} }
+snippet min
+options word
+	min { |a, b| ${0} }
+snippet par
+options word
+	partition { |${1:e}| ${0} }
+snippet pard
+options word
+	partition do |${1:e}|
+		${0}
+	end
+snippet rej
+options word
+	reject { |${1:e}| ${0} }
+snippet rejd
+options word
+	reject do |${1:e}|
+		${0}
+	end
+snippet sel
+options word
+	select { |${1:e}| ${0} }
+snippet seld
+options word
+	select do |${1:e}|
+		${0}
+	end
+snippet lam
+options word
+	lambda { |${1:args}| ${0} }
+# I'm pretty sure that ruby users expect do to expand to do .. end
+snippet do
+options word
+	do
+		${0}
+	end
+# this is for one or more variables. typing a ", " is that cheap that it may
+# not be worth adding another snippet. should 0/1 placeholders change order?
+# its a good idea to think about the var name, so use it first
+snippet dov
+options word
+	do |${1:v}|
+		${2}
+	end
+snippet :
+options word
+	:${1:key} => ${2:"value"}
+snippet ope
+options word
+	open(${1:"path/or/url/or/pipe"}, "${2:w}") { |${3:io}| ${0} }
+# path_from_here()
+snippet fpath
+options word
+	File.join(File.dirname(__FILE__), *%2[${1:rel path here}])
+# unix_filter {}
+snippet unif
+options word
+	ARGF.each_line${1} do |${2:line}|
+		${0}
+	end
+# option_parse {}
+snippet optp
+options word
+	require "optparse"
+
+	options = {${0:default => "args"}}
+
+	ARGV.options do |opts|
+		opts.banner = "Usage: #{File.basename($PROGRAM_NAME)}
+snippet opt
+options word
+	opts.on( "-${1:o}", "--${2:long-option-name}", ${3:String},
+	         "${4:Option description.}") do |${5:opt}|
+		${0}
+	end
+snippet tc
+options word
+	require "test/unit"
+
+	require "${1:library_file_name}"
+
+	class Test${2:$1} < Test::Unit::TestCase
+		def test_${3:case_name}
+			${0}
+		end
+	end
+snippet ts
+options word
+	require "test/unit"
+
+	require "tc_${1:test_case_file}"
+	require "tc_${2:test_case_file}"
+snippet as
+options word
+	assert ${1:test}, "${2:Failure message.}"
+snippet ase
+options word
+	assert_equal ${1:expected}, ${2:actual}
+snippet asne
+options word
+	assert_not_equal ${1:unexpected}, ${2:actual}
+snippet asid
+options word
+	assert_in_delta ${1:expected_float}, ${2:actual_float}, ${3:2 ** -20}
+snippet asi
+options word
+	assert_includes ${1:collection}, ${2:object}
+snippet asio
+options word
+	assert_instance_of ${1:ExpectedClass}, ${2:actual_instance}
+snippet asko
+options word
+	assert_kind_of ${1:ExpectedKind}, ${2:actual_instance}
+snippet asn
+options word
+	assert_nil ${1:instance}
+snippet asnn
+options word
+	assert_not_nil ${1:instance}
+snippet asm
+options word
+	assert_match /${1:expected_pattern}/, ${2:actual_string}
+snippet asnm
+options word
+	assert_no_match /${1:unexpected_pattern}/, ${2:actual_string}
+snippet aso
+options word
+	assert_operator ${1:left}, :${2:operator}, ${3:right}
+snippet asr
+options word
+	assert_raise ${1:Exception} { ${0} }
+snippet asrd
+options word
+	assert_raise ${1:Exception} do
+		${0}
+	end
+snippet asnr
+options word
+	assert_nothing_raised ${1:Exception} { ${0} }
+snippet asnrd
+options word
+	assert_nothing_raised ${1:Exception} do
+		${0}
+	end
+snippet asrt
+options word
+	assert_respond_to ${1:object}, :${2:method}
+snippet ass assert_same(..)
+options word
+	assert_same ${1:expected}, ${2:actual}
+snippet ass assert_send(..)
+options word
+	assert_send [${1:object}, :${2:message}, ${3:args}]
+snippet asns
+options word
+	assert_not_same ${1:unexpected}, ${2:actual}
+snippet ast
+options word
+	assert_throws :${1:expected} { ${0} }
+snippet astd
+options word
+	assert_throws :${1:expected} do
+		${0}
+	end
+snippet asnt
+options word
+	assert_nothing_thrown { ${0} }
+snippet asntd
+options word
+	assert_nothing_thrown do
+		${0}
+	end
+snippet fl
+options word
+	flunk "${1:Failure message.}"
+# Benchmark.bmbm do .. end
+snippet bm-
+options word
+	TESTS = ${1:10_000}
+	Benchmark.bmbm do |results|
+		${0}
+	end
+snippet rep
+options word
+	results.report("${1:name}:") { TESTS.times { ${0} }}
+# Marshal.dump(.., file)
+snippet Md
+options word
+	File.open(${1:"path/to/file.dump"}, "wb") { |${2:file}| Marshal.dump(${3:obj}, $2) }
+# Mashal.load(obj)
+snippet Ml
+options word
+	File.open(${1:"path/to/file.dump"}, "rb") { |${2:file}| Marshal.load($2) }
+# deep_copy(..)
+snippet deec
+options word
+	Marshal.load(Marshal.dump(${1:obj_to_copy}))
+snippet Pn-
+options word
+	PStore.new(${1:"file_name.pstore"})
+snippet tra
+options word
+	transaction(${1:true}) { ${0} }
+# xmlread(..)
+snippet xml-
+options word
+	REXML::Document.new(File.read(${1:"path/to/file"}))
+# xpath(..) { .. }
+snippet xpa
+options word
+	elements.each(${1:"//Xpath"}) do |${2:node}|
+		${0}
+	end
+# class_from_name()
+snippet clafn
+options word
+	split("::").inject(Object) { |par, const| par.const_get(const) }
+# singleton_class()
+snippet sinc
+options word
+	class << self; self end
+snippet nam
+options word
+	namespace :${1:`vim_snippets#Filename()`} do
+		${0}
+	end
+snippet tas
+options word
+	desc "${1:Task description}"
+	task :${2:task_name => [:dependent, :tasks]} do
+		${0}
+	end
+# block
+snippet b
+options word
+	{ |${1:var}| ${0} }
+snippet begin
+options word
+	begin
+		raise 'A test exception.'
+	rescue Exception => e
+		puts e.message
+		puts e.backtrace.inspect
+	else
+		# other exception
+	ensure
+		# always executed
+	end
+
+#debugging
+snippet debug
+options word
+	require 'ruby-debug'; debugger; true;
+snippet pry
+options word
+	require 'pry'; binding.pry
+snippet strf
+options word
+	strftime("${1:%Y-%m-%d %H:%M:%S %z}")${0}
+#############################################
+# Rails snippets - for pure Ruby, see above #
+#############################################
+snippet art
+options word
+	assert_redirected_to ${1::action => "${2:index}"}
+snippet artnp
+options word
+	assert_redirected_to ${1:parent}_${2:child}_path(${3:@$1}, ${0:@$2})
+snippet artnpp
+options word
+	assert_redirected_to ${1:parent}_${2:child}_path(${0:@$1})
+snippet artp
+options word
+	assert_redirected_to ${1:model}_path(${0:@$1})
+snippet artpp
+options word
+	assert_redirected_to ${0:model}s_path
+snippet asd
+options word
+	assert_difference "${1:Model}.${2:count}", ${3:1} do
+		${0}
+	end
+snippet asnd
+options word
+	assert_no_difference "${1:Model}.${2:count}" do
+		${0}
+	end
+snippet asre
+options word
+	assert_response :${1:success}, @response.body
+snippet asrj
+options word
+	assert_rjs :${1:replace}, "${0:dom id}"
+snippet ass assert_select(..)
+options word
+	assert_select '${1:path}', :${2:text} => '${3:inner_html' ${4:do}
+snippet ba
+options word
+	before_action :${0:method}
+snippet bf
+options word
+	before_filter :${0:method}
+snippet bt
+options word
+	belongs_to :${0:association}
+snippet btp
+options word
+	belongs_to :${1:association}, :polymorphic => true
+snippet crw
+options word
+	cattr_accessor :${0:attr_names}
+snippet defcreate
+options word
+	def create
+		@${1:model_class_name} = ${2:ModelClassName}.new(params[:$1])
+
+		respond_to do |format|
+			if @$1.save
+				flash[:notice] = '$2 was successfully created.'
+				format.html { redirect_to(@$1) }
+				format.xml  { render :xml => @$1, :status => :created, :location => @$1 }
+			else
+				format.html { render :action => "new" }
+				format.xml  { render :xml => @$1.errors, :status => :unprocessable_entity }
+			end
+		end
+	end
+snippet defdestroy
+options word
+	def destroy
+		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
+		@$1.destroy
+
+		respond_to do |format|
+			format.html { redirect_to($1s_url) }
+			format.xml  { head :ok }
+		end
+	end
+snippet defedit
+options word
+	def edit
+		@${1:model_class_name} = ${0:ModelClassName}.find(params[:id])
+	end
+snippet defindex
+options word
+	def index
+		@${1:model_class_name} = ${2:ModelClassName}.all
+
+		respond_to do |format|
+			format.html # index.html.erb
+			format.xml  { render :xml => @$1s }
+		end
+	end
+snippet defnew
+options word
+	def new
+		@${1:model_class_name} = ${2:ModelClassName}.new
+
+		respond_to do |format|
+			format.html # new.html.erb
+			format.xml  { render :xml => @$1 }
+		end
+	end
+snippet defshow
+options word
+	def show
+		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
+
+		respond_to do |format|
+			format.html # show.html.erb
+			format.xml  { render :xml => @$1 }
+		end
+	end
+snippet defupdate
+options word
+	def update
+		@${1:model_class_name} = ${2:ModelClassName}.find(params[:id])
+
+		respond_to do |format|
+			if @$1.update_attributes(params[:$1])
+				flash[:notice] = '$2 was successfully updated.'
+				format.html { redirect_to(@$1) }
+				format.xml  { head :ok }
+			else
+				format.html { render :action => "edit" }
+				format.xml  { render :xml => @$1.errors, :status => :unprocessable_entity }
+			end
+		end
+	end
+snippet dele delegate .. to
+options word
+	delegate :${1:methods}, :to => :${0:object}
+snippet dele delegate .. to .. prefix .. allow_nil
+options word
+	delegate :${1:methods}, :to => :${2:object}, :prefix => :${3:prefix}, :allow_nil => ${0:allow_nil}
+snippet flash
+options word
+	flash[:${1:notice}] = "${0}"
+snippet habtm
+options word
+	has_and_belongs_to_many :${1:object}, :join_table => "${2:table_name}", :foreign_key => "${3}_id"
+snippet hm
+options word
+	has_many :${0:object}
+snippet hmd
+options word
+	has_many :${1:other}s, :class_name => "${2:$1}", :foreign_key => "${3:$1}_id", :dependent => :destroy
+snippet hmt
+options word
+	has_many :${1:object}, :through => :${0:object}
+snippet ho
+options word
+	has_one :${0:object}
+snippet hod
+options word
+	has_one :${1:object}, dependent: :${0:destroy}
+snippet i18
+options word
+	I18n.t('${1:type.key}')
+snippet ist
+options word
+	<%= image_submit_tag("${1:agree.png}", :id => "${2:id}"${0} %>
+snippet log
+options word
+	Rails.logger.${1:debug} ${0}
+snippet log2
+options word
+	RAILS_DEFAULT_LOGGER.${1:debug} ${0}
+snippet logd
+options word
+	logger.debug { "${1:message}" }
+snippet loge
+options word
+	logger.error { "${1:message}" }
+snippet logf
+options word
+	logger.fatal { "${1:message}" }
+snippet logi
+options word
+	logger.info { "${1:message}" }
+snippet logw
+options word
+	logger.warn { "${1:message}" }
+snippet mapc
+options word
+	${1:map}.${2:connect} '${0:controller/:action/:id}'
+snippet mapca
+options word
+	${1:map}.catch_all "*${2:anything}", :controller => "${3:default}", :action => "${4:error}"
+snippet mapr
+options word
+	${1:map}.resource :${0:resource}
+snippet maprs
+options word
+	${1:map}.resources :${0:resource}
+snippet mapwo
+options word
+	${1:map}.with_options :${2:controller} => '${3:thing}' do |$3|
+		${0}
+	end
+
+###############################
+#   model callback snippets   #
+###############################
+
+# before callback
+snippet mbv
+options word
+	before_validation :${0:method}
+snippet mbc
+options word
+	before_create :${0:method}
+snippet mbu
+options word
+	before_update :${0:method}
+snippet mbs
+options word
+	before_save :${0:method}
+snippet mbd
+options word
+	before_destroy :${0:method}
+
+# after callback
+snippet mav
+options word
+	after_validation :${0:method}
+snippet maf
+options word
+	after_find :${0:method}
+snippet mat
+options word
+	after_touch :${0:method}
+snippet macr
+options word
+	after_create :${0:method}
+snippet mau
+options word
+	after_update :${0:method}
+snippet mas
+options word
+	after_save :${0:method}
+snippet mad
+options word
+	after_destroy :${0:method}
+
+# around callback
+snippet marc
+options word
+	around_create :${0:method}
+snippet maru
+options word
+	around_update :${0:method}
+snippet mars
+options word
+	around_save :${0:method}
+snippet mard
+options word
+	around_destroy :${0:method}
+
+snippet mcht
+options word
+	change_table :${1:table_name} do |t|
+		${0}
+	end
+snippet mp
+options word
+	map(&:${0:id})
+snippet mrw
+options word
+	mattr_accessor :${0:attr_names}
+snippet oa
+options word
+	order("${0:field}")
+snippet od
+options word
+	order("${0:field} DESC")
+snippet pa
+options word
+	params[:${1:id}]
+snippet ra
+options word
+	render :action => "${0:action}"
+snippet ral
+options word
+	render :action => "${1:action}", :layout => "${0:layoutname}"
+snippet rest
+options word
+	respond_to do |format|
+		format.${1:html} { ${0} }
+	end
+snippet rf
+options word
+	render :file => "${0:filepath}"
+snippet rfu
+options word
+	render :file => "${1:filepath}", :use_full_path => ${0:false}
+snippet ri
+options word
+	render :inline => "${0:<%= 'hello' %>}"
+snippet ril
+options word
+	render :inline => "${1:<%= 'hello' %>}", :locals => { ${2::name} => "${3:value}"${0} }
+snippet rit
+options word
+	render :inline => "${1:<%= 'hello' %>}", :type => ${0::rxml}
+snippet rjson
+options word
+	render :json => ${0:text to render}
+snippet rl
+options word
+	render :layout => "${0:layoutname}"
+snippet rn
+options word
+	render :nothing => ${0:true}
+snippet rns
+options word
+	render :nothing => ${1:true}, :status => ${0:401}
+snippet rp
+options word
+	render :partial => "${0:item}"
+snippet rpc
+options word
+	render :partial => "${1:item}", :collection => ${0:@$1s}
+snippet rpl
+options word
+	render :partial => "${1:item}", :locals => { :${2:$1} => ${0:@$1}
+snippet rpo
+options word
+	render :partial => "${1:item}", :object => ${0:@$1}
+snippet rps
+options word
+	render :partial => "${1:item}", :status => ${0:500}
+snippet rt
+options word
+	render :text => "${0:text to render}"
+snippet rtl
+options word
+	render :text => "${1:text to render}", :layout => "${0:layoutname}"
+snippet rtlt
+options word
+	render :text => "${1:text to render}", :layout => ${0:true}
+snippet rts
+options word
+	render :text => "${1:text to render}", :status => ${0:401}
+snippet ru
+options word
+	render :update do |${1:page}|
+		$1.${0}
+	end
+snippet rxml
+options word
+	render :xml => ${0:text to render}
+snippet sc
+options word
+	scope :${1:name}, -> { where(${2:field}: ${0:value}) }
+snippet sl
+options word
+	scope :${1:name}, lambda do |${2:value}|
+		where("${3:field = ?}", ${0:bind var})
+	end
+snippet sha1
+options word
+	Digest::SHA1.hexdigest(${0:string})
+snippet sweeper
+options word
+	class ${1:ModelClassName}Sweeper < ActionController::Caching::Sweeper
+		observe $1
+
+		def after_save(${0:model_class_name})
+			expire_cache($2)
+		end
+
+		def after_destroy($2)
+			expire_cache($2)
+		end
+
+		def expire_cache($2)
+			expire_page
+		end
+	end
+snippet va validates_associated
+options word
+	validates_associated :${0:attribute}
+snippet va validates .., :acceptance => true
+options word
+	validates :${0:terms}, :acceptance => true
+snippet vc
+options word
+	validates :${0:attribute}, :confirmation => true
+snippet ve
+options word
+	validates :${1:attribute}, :exclusion => { :in => ${0:%w( mov avi )} }
+snippet vf
+options word
+	validates :${1:attribute}, :format => { :with => /${0:regex}/ }
+snippet vi
+options word
+	validates :${1:attribute}, :inclusion => { :in => %w(${0: mov avi }) }
+snippet vl
+options word
+	validates :${1:attribute}, :length => { :in => ${2:3}..${0:20} }
+snippet vn
+options word
+	validates :${0:attribute}, :numericality => true
+snippet vp
+options word
+	validates :${0:attribute}, :presence => true
+snippet vu
+options word
+	validates :${0:attribute}, :uniqueness => true
+snippet format
+options word
+	format.${1:js|xml|html} { ${0} }
+snippet wc
+options word
+	where(${1:"conditions"}${0:, bind_var})
+snippet wf
+options word
+	where(${1:field} => ${0:value})
+snippet xdelete
+options word
+	xhr :delete, :${1:destroy}, :id => ${2:1}
+snippet xget
+options word
+	xhr :get, :${1:show}, :id => ${2:1}
+snippet xpost
+options word
+	xhr :post, :${1:create}, :${2:object} => { ${0} }
+snippet xput
+options word
+	xhr :put, :${1:update}, :id => ${2:1}, :${3:object} => { ${4} }
+snippet test
+options word
+	test "should ${1:do something}" do
+		${0}
+	end
+###########################
+#   migrations snippets   #
+###########################
+snippet mac
+options word
+	add_column :${1:table_name}, :${2:column_name}, :${0:data_type}
+snippet mai
+options word
+	add_index :${1:table_name}, :${0:column_name}
+snippet mrc
+options word
+	remove_column :${1:table_name}, :${0:column_name}
+snippet mrnc
+options word
+	rename_column :${1:table_name}, :${2:old_column_name}, :${0:new_column_name}
+snippet mcc
+options word
+	change_column :${1:table}, :${2:column}, :${0:type}
+snippet mnc
+options word
+	t.${1:string} :${2:title}${3:, null: false}
+snippet mct
+options word
+	create_table :${1:table_name} do |t|
+		${0}
+	end
+snippet migration class .. < ActiveRecord::Migration .. def up .. def down .. end
+options word
+	class ${1:class_name} < ActiveRecord::Migration
+		def up
+			${0}
+		end
+
+		def down
+		end
+	end
+snippet migration class .. < ActiveRecord::Migration .. def change .. end
+options word
+	class ${1:class_name} < ActiveRecord::Migration
+		def change
+			${0}
+		end
+	end
+snippet trc
+options word
+	t.remove :${0:column}
+snippet tre
+options word
+	t.rename :${1:old_column_name}, :${2:new_column_name}
+	${0}
+snippet tref
+options word
+	t.references :${0:model}
+snippet tcb
+options word
+	t.boolean :${1:title}
+	${0}
+snippet tcbi
+options word
+	t.binary :${1:title}, :limit => ${2:2}.megabytes
+	${0}
+snippet tcd
+options word
+	t.decimal :${1:title}, :precision => ${2:10}, :scale => ${3:2}
+	${0}
+snippet tcda
+options word
+	t.date :${1:title}
+	${0}
+snippet tcdt
+options word
+	t.datetime :${1:title}
+	${0}
+snippet tcf
+options word
+	t.float :${1:title}
+	${0}
+snippet tch
+options word
+	t.change :${1:name}, :${2:string}, :${3:limit} => ${4:80}
+	${0}
+snippet tci
+options word
+	t.integer :${1:title}
+	${0}
+snippet tcl
+options word
+	t.integer :lock_version, :null => false, :default => 0
+	${0}
+snippet tcr
+options word
+	t.references :${1:taggable}, :polymorphic => { :default => '${2:Photo}' }
+	${0}
+snippet tcs
+options word
+	t.string :${1:title}
+	${0}
+snippet tct
+options word
+	t.text :${1:title}
+	${0}
+snippet tcti
+options word
+	t.time :${1:title}
+	${0}
+snippet tcts
+options word
+	t.timestamp :${1:title}
+	${0}
+snippet tctss
+options word
+	t.timestamps
+	${0}
+##########################
+#     Rspec snippets     #
+##########################
+snippet desc
+options word
+	describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
+		${0}
+	end
+snippet descm
+options word
+	describe "${1:#method}" do
+		${0:pending "Not implemented"}
+	end
+snippet cont
+options word
+	context "${1:message}" do
+		${0}
+	end
+snippet bef
+options word
+	before :${1:each} do
+		${0}
+	end
+snippet aft
+options word
+	after :${1:each} do
+		${0}
+	end
+snippet let
+options word
+	let(:${1:object}) { ${0} }
+snippet let!
+options word
+	let!(:${1:object}) { ${0} }
+snippet subj
+options word
+	subject { ${0} }
+snippet s.
+options word
+	subject.${0:method}
+snippet spec
+options word
+	specify { subject.${0} }
+snippet exp
+options word
+	expect(${1:object}).to ${0}
+snippet expb
+options word
+	expect { ${1:object} }.to ${0}
+snippet experr
+options word
+	expect { ${1:object} }.to raise_error ${2:StandardError}, /${0:message_regex}/
+snippet shared
+options word
+	shared_examples ${0:"shared examples name"}
+snippet ibl
+options word
+	it_behaves_like ${0:"shared examples name"}
+snippet it
+options word
+	it "${1:spec_name}" do
+		${0}
+	end
+snippet its
+options word
+	its(:${1:method}) { should ${0} }
+snippet is
+options word
+	it { should ${0} }
+snippet isn
+options word
+	it { should_not ${0} }
+#ShouldaMatchers#ActionController
+snippet isfp
+options word
+	it { should filter_param :${0:key} }
+snippet isrt
+options word
+	it { should redirect_to ${0:url} }
+snippet isrtp
+options word
+	it { should render_template ${0} }
+snippet isrwl
+options word
+	it { should render_with_layout ${0} }
+snippet isrf
+options word
+	it { should rescue_from ${0:exception} }
+snippet isrw
+options word
+	it { should respond_with ${0:status} }
+snippet isr
+options word
+	it { should route(:${1:method}, '${0:path}') }
+snippet isss
+options word
+	it { should set_session :${0:key} }
+snippet issf
+options word
+	it { should set_the_flash('${0}') }
+#ShouldaMatchers#ActiveModel
+snippet isama
+options word
+	it { should allow_mass_assignment_of :${0} }
+snippet isav
+options word
+	it { should allow_value(${1}).for :${0} }
+snippet isee
+options word
+	it { should ensure_exclusion_of :${0} }
+snippet isei
+options word
+	it { should ensure_inclusion_of :${0} }
+snippet isel
+options word
+	it { should ensure_length_of :${0} }
+snippet isva
+options word
+	it { should validate_acceptance_of :${0} }
+snippet isvc
+options word
+	it { should validate_confirmation_of :${0} }
+snippet isvn
+options word
+	it { should validate_numericality_of :${0} }
+snippet isvp
+options word
+	it { should validate_presence_of :${0} }
+snippet isvu
+options word
+	it { should validate_uniqueness_of :${0} }
+#ShouldaMatchers#ActiveRecord
+snippet isana
+options word
+	it { should accept_nested_attributes_for :${0} }
+snippet isbt
+options word
+	it { should belong_to :${0} }
+snippet isbtcc
+options word
+	it { should belong_to(:${1}).counter_cache ${0:true} }
+snippet ishbtm
+options word
+	it { should have_and_belong_to_many :${0} }
+snippet isbv
+options word
+	it { should be_valid }
+snippet ishc
+options word
+	it { should have_db_column :${0} }
+snippet ishi
+options word
+	it { should have_db_index :${0} }
+snippet ishm
+options word
+	it { should have_many :${0} }
+snippet ishmt
+options word
+	it { should have_many(:${1}).through :${0} }
+snippet isho
+options word
+	it { should have_one :${0} }
+snippet ishro
+options word
+	it { should have_readonly_attribute :${0} }
+snippet iss
+options word
+	it { should serialize :${0} }
+snippet isres
+options word
+	it { should respond_to :${0} }
+snippet isresw
+options word
+	it { should respond_to(:${1}).with(${0}).arguments }
+snippet super_call
+options word
+	${1:super_class}.instance_method(:${0:method}).bind(self).call
